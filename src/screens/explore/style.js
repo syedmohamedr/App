@@ -29,6 +29,7 @@ const Styles = StyleSheet.create({
         marginTop: 1,
         borderBottomColor:"red"
       },
+          
       separator: {
     
        

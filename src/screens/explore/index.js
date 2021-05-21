@@ -10,7 +10,6 @@ import {
 import Styles from './style';
 import colors from '../../config/color';
 
-
 const Separator = () => (
   <View style={Styles.separator} />
 );
@@ -26,8 +25,7 @@ const Explore = ({navigation}) => {
             style={Styles.buttonStyle}
             onPress={() =>
               navigation.navigate(
-                'Myntra',
-              )
+                'Myntra',)
             }>     
             <Text>Myntra Mall</Text>
           </TouchableOpacity>
@@ -73,7 +71,7 @@ const Explore = ({navigation}) => {
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text style={{color:colors.secondary}}>Myntra Masterclass</Text>
+            <Text style={{color:colors.primary}}>Myntra Masterclass</Text>
             </TouchableOpacity>
         </View>
         <Separator>
