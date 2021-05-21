@@ -6,7 +6,6 @@ import {
   SafeAreaView,
   ScrollView,
   Image,
-  Button,
 } from 'react-native';
 import Styles from './style';
 import colors from '../../config/color';
@@ -19,77 +18,67 @@ const Separator = () => (
 const Profile = ({navigation}) => {
   return (
     <ScrollView>
-    <SafeAreaView style={{flex: 4}}> 
+    <SafeAreaView style={{flex: 1}}> 
       <View style={{flex: 1, padding: 1}}>
           <View>
-              <View style={Styles.view}>
-                  
-
-              </View>
-                <View>
-                <Button
-                style={Styles.btn}
-                title="Login/signup"
-                color="#e00b4b"
-                onPress={() => Alert.alert('Button with adjusted color pressed')}
-                />
-                </View>
-            </View>
+              
+          </View>
         <View style={Styles.container}>
 
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() =>
-              navigation.navigate('Orders')
+              navigation.navigate(
+                'Myntra',
+              )
             }>     
             <Text>Orders</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Help')}>
+            onPress={() => navigation.navigate('MyntraScreen')}>
             <Text>Help Center</Text>
             <Text> ENROLL NOW</Text>
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Wishlist')}>
+            onPress={() => navigation.navigate('Details')}>
            <Text>Wishlist</Text>
           </TouchableOpacity>
-          </View>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Scan')}>
+            onPress={() => navigation.navigate('Details')}>
             
             <Text>Scan for coupon</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Refer')}>
+            onPress={() => navigation.navigate('Details')}>
             <Text>Refer & Earn</Text>
             
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('FAQs')}>
-            <Text style={{color:colors.secondary}}>FAQs</Text>
+            onPress={() => navigation.navigate('Details')}>
+            <Text>FAQs</Text>
           </TouchableOpacity>
       
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('ABOUT')}>
-            <Text style={{color:colors.secondary}}>ABOUT US</Text>
+            onPress={() => navigation.navigate('Details')}>
+            <Text>ABOUT US</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('TEARMS')}>
-            <Text style={{color:colors.secondary}}>TEARMS OF USE</Text>
+            onPress={() => navigation.navigate('Details')}>
+            <Text>TEARMS OF USE</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('PRIVACY')}>
+            onPress={() => navigation.navigate('Details')}>
             <Text style={{color:colors.secondary}}>PRIVACY POLICY</Text>
             </TouchableOpacity>
-        
+        </View>
         <Separator>
         </Separator>
       </View>
