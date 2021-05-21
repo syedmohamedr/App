@@ -1,4 +1,5 @@
 export default {
     "primary":"blue",
-    "secondary": "grey"
+    "secondary": "grey",
+    "button" :"#e00b4b"
 }

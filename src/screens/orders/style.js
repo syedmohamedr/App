@@ -34,18 +34,6 @@ const Styles = StyleSheet.create({
        
         borderBottomWidth: StyleSheet.hairlineWidth,
       },
-      btn: {
-          
-         alignItems:'center',
-
-      },
-      view:{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-
-
-      },
 })
 
 
