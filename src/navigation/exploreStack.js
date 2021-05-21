@@ -6,7 +6,7 @@ const Stack = createStackNavigator();
 
 const ExploreStack =() => {
   return (
-    <Stack.Navigator>
+    <Stack.Navigator initialRouteName="Myntra Mall" headerMode={false}>
       <Stack.Screen name="Explore" component={Explore} />
       <Stack.Screen name="Myntra" component={MyntraStack} />
     </Stack.Navigator>
