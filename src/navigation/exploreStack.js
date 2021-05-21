@@ -7,7 +7,12 @@ const Stack = createStackNavigator();
 
 const ExploreStack =() => {
   return (
-    <Stack.Navigator initialRouteName="Myntra Mall" headerMode={false}>
+    <Stack.Navigator initialRouteName="Home" headerMode="false"
+    screenOptions={{
+      headerStyle:{backgroundColor:"#fff"},
+      headerTintColor:"grey",
+      headerTitleStyle: {fontWeight:'bold'}
+    }}>
       <Stack.Screen name="Explore" component={Explore} />
       <Stack.Screen name="Myntra" component={MyntraStack} />
     </Stack.Navigator>

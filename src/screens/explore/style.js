@@ -30,8 +30,6 @@ const Styles = StyleSheet.create({
         borderBottomColor:"red"
       },
       text:{
-        left:20,
-        top:10
       },
           
       separator: {
