@@ -3,12 +3,12 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { View,Text,StyleSheet,Image, ScrollView} from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import colors from '../../config/color';
-
+import Styles from './style';
 
 
 const Stack = createStackNavigator();
 
-const MyntraScreen=()=> <View>
+const MyntraScreen=()=> <View style={style.one}>
     <ScrollView>
 <Text>Myntra Mall</Text>
 <Text style={{color: colors.home}}> HOUSE OF BRANDS</Text>
@@ -16,12 +16,16 @@ const MyntraScreen=()=> <View>
 <Image
 style={style.two}
 source={require('../../assets/pic1.jpg')}/>
+<Text style={{color:"red",fontSize:20,fontFamily:"italic"}}>Best Of Summer Styles</Text>
 <Image
 style={style.two}
 source={require('../../assets/pic2.jpg')}/>
 <Image
 style={style.two}
 source={require('../../assets/pic3.jpeg')}/>
+<Image
+style={style.two}
+source={require('../../assets/pic4.jpg')}/>
 
 </ScrollView>
     </View>

@@ -6,6 +6,7 @@ const Styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
       },
+      
       header: {
         fontSize: 25,
         textAlign: 'center',
@@ -29,16 +30,17 @@ const Styles = StyleSheet.create({
         marginTop: 1,
         borderBottomColor:"red"
       },
+      btn: {
+        color:"#e00b4b",
+       alignItems:'center',
+      },
       separator: {
     
        
         borderBottomWidth: StyleSheet.hairlineWidth,
       },
-      btn: {
-          
-         alignItems:'center',
+      
 
-      },
       view:{
         flex: 1,
         alignItems: 'center',
@@ -49,4 +51,5 @@ const Styles = StyleSheet.create({
 })
 
 
-export default Styles
+
+export default Styles;

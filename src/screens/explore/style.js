@@ -29,6 +29,10 @@ const Styles = StyleSheet.create({
         marginTop: 1,
         borderBottomColor:"red"
       },
+      text:{
+        left:20,
+        top:10
+      },
           
       separator: {
     

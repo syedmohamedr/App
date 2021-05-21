@@ -7,6 +7,8 @@ import {
   ScrollView,
   Image,
   Button,
+  Alert,
+  StyleSheet
 } from 'react-native';
 import Styles from './style';
 import colors from '../../config/color';
@@ -30,7 +32,6 @@ const Profile = ({navigation}) => {
                 <Button
                 style={Styles.btn}
                 title="Login/signup"
-                color="#e00b4b"
                 onPress={() => Alert.alert('Button with adjusted color pressed')}
                 />
                 </View>
