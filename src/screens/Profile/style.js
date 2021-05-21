@@ -31,8 +31,8 @@ const Styles = StyleSheet.create({
         borderBottomColor:"red"
       },
       btn: {
-        color:"#e00b4b",
-       alignItems:'center',
+        width:"50%",
+        left:100
       },
       separator: {
     
