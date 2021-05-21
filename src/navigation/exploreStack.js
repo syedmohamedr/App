@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Explore from '../screens/explore';
 import MyntraStack from '../screens/explore/mallStack';
+import { View } from 'react-native';
 const Stack = createStackNavigator();
 
 const ExploreStack =() => {

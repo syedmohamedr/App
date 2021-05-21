@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   ScrollView,
   Image,
+  StyleSheet
 } from 'react-native';
 import Styles from './style';
 import colors from '../../config/color';
@@ -27,51 +28,67 @@ const Explore = ({navigation}) => {
               navigation.navigate(
                 'Myntra',)
             }>     
-            <Text>Myntra Mall</Text>
+            <Image style={{height:30, width:30,top:30,}}
+            source={require('../../assets/icon1.jpg')}/>
+            <Text style={styles.text}>Myntra Mall</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('MyntraScreen')}>
-            <Text>Myntra Insider</Text>
-            <Text> ENROLL NOW</Text>
+              <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon2.png')}/>
+            <Text style={{left:40}}>Myntra Insider</Text>
+            <Text style={styles.text1}> ENROLL NOW</Text>
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-           <Text>Gift Cards</Text>
+              <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon3.png')}/>
+           <Text style={{left:50}}>Gift Cards</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            
-            <Text>Play & Earn</Text>
+             <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon4.png')}/>
+            <Text style={{left:50}}>Play & Earn</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text>Myntra Move</Text>
-            
+               <Image style={{height:20, width:40,top:20,}}
+            source={require('../../assets/icon5.png')}/>
+            <Text style={{left:50}}>Myntra Move</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text>Refer & Earn</Text>
+               <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon6.png')}/>
+            <Text style={{left:50}}>Refer & Earn</Text>
           </TouchableOpacity>
       
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text>Scan for Coupons</Text>
+               <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon7.png')}/>
+            <Text style={{left:50}}>Scan for Coupons</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text>Myntra Fashion Superstar</Text>
+               <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon8.png')}/>
+            <Text style={{left:50}}>Myntra Fashion Superstar</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-            <Text style={{color:colors.primary}}>Myntra Masterclass</Text>
+               <Image style={{height:20, width:30,top:20,}}
+            source={require('../../assets/icon9.jpg')}/>
+            <Text style={{left:50}}>Myntra Masterclass</Text>
             </TouchableOpacity>
         </View>
         <Separator>
@@ -81,6 +98,17 @@ const Explore = ({navigation}) => {
     </ScrollView>
   );
 };
+const styles=StyleSheet.create({
+  text:{
+    left:40,
+    top:10,
+  },
+  text1:{
+    left:210,
+    top: -18,
+    color:"red"
+  }
+})
 
 export default Explore;
 
