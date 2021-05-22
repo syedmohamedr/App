@@ -6,7 +6,7 @@ const Stack = createStackNavigator();
 const WomenStack = () => {
     return (
         <View>
-            <Text></Text>
+            <Text>Hey there</Text>
         </View>
     );
 }
