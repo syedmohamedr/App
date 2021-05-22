@@ -38,7 +38,7 @@ const Explore = ({navigation}) => {
       />
       <Image
       style={styles.image}
-      source={require('../../assets/profile.png')}/>
+      source={require('../../assets/profile.jpg')}/>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() =>
@@ -70,7 +70,7 @@ const Explore = ({navigation}) => {
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
              <Image style={{height:40, width:30,top:20,}}
-            source={require('../../assets/qr.png')}/>
+            source={require('../../assets/icon7.png')}/>
             <Text style={{left:50}}>Scan for Coupons</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -132,12 +132,13 @@ const styles=StyleSheet.create({
   },
   two:{
     width:"60%",
-    marginLeft:400
+    marginLeft:400,
+    left:40,
   },
   image:{
     height:120,
     width:120,
-    left:-142,
+    left:-120,
     top: -80,
   }
 
