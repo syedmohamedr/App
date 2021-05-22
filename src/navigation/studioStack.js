@@ -1,17 +1,18 @@
 import React from 'react';
+import { View, Text } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
-import { View,Text } from 'react-native';
+import Studio from '../screens/studioScreen';
 
 const Stack = createStackNavigator();
 
-const StudioScreen=()=> <View><Text>Profile</Text></View>
+const StudioScreen=()=> <View><Text>studio</Text></View>
 
-const StudioStack =() => {
+const studioScreen =() => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Studio" component={StudioScreen} />
+      <Stack.Screen name="StudioStack" component={Studio} />
     </Stack.Navigator>
   );
 }
 
-export default StudioStack;
+export default studioScreen;
