@@ -45,68 +45,64 @@ const Explore = ({navigation}) => {
               navigation.navigate(
                 'Myntra',)
             }>     
-            <Image style={{height:30, width:30,top:30,}}
-            source={require('../../assets/icon1.jpg')}/>
+            <Image style={{height:30, width:30,top:40,}}
+            source={require('../../assets/order.png')}/>
             <Text style={styles.text}>Orders</Text>
             <Text style={styles.text}>Check your order status</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('MyntraScreen')}>
-              <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon2.png')}/>
+              <Image style={{height:30, width:30,top:40,}}
+            source={require('../../assets/help.png')}/>
             <Text style={{left:40}}>Help Center</Text>
             <Text style={styles.text1}> Help regarding your recent purchase</Text>
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-              <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon3.png')}/>
+              <Image style={{height:30, width:30,top:30,}}
+            source={require('../../assets/heart.png')}/>
            <Text style={{left:50}}>Wishlist</Text>
-           <Text style={{left:50}}>Your most loved styles</Text>
+           <Text style={{left:50,fontSize:12,}}>Your most loved styles</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-             <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon4.png')}/>
+             <Image style={{height:40, width:30,top:20,}}
+            source={require('../../assets/qr.png')}/>
             <Text style={{left:50}}>Scan for Coupons</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-               <Image style={{height:20, width:40,top:20,}}
-            source={require('../../assets/icon5.png')}/>
+               <Image style={{height:30, width:30,top:30,}}
+            source={require('../../assets/icon3.png')}/>
             <Text style={{left:50}}>Refer & Earn</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-               <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon6.png')}/>
+            
             <Text style={{left:50}}>FAQs</Text>
           </TouchableOpacity>
       
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-               <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon7.png')}/>
+              
             <Text style={{left:50}}>About Us</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-               <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon8.png')}/>
+              
             <Text style={{left:50}}>TERMS OF USE</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Details')}>
-               <Image style={{height:20, width:30,top:20,}}
-            source={require('../../assets/icon9.jpg')}/>
+               
             <Text style={{left:50}}>PRIVACY POLICY</Text>
             </TouchableOpacity>
         </View>
