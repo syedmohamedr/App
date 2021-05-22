@@ -26,7 +26,7 @@ const Explore = ({navigation}) => {
             style={Styles.buttonStyle}
             onPress={() =>
               navigation.navigate(
-                'Myntra',)
+                'Myntra')
             }>     
             <Image style={{height:30, width:30,top:30,}}
             source={require('../../assets/icon1.jpg')}/>
