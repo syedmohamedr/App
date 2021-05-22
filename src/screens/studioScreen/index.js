@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, ScrollView,Image ,StyleSheet} from 'react-native';
+import { View, Text, ScrollView,Image ,StyleSheet, TouchableWithoutFeedback} from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const StudioStack = () => {
     return (
@@ -19,7 +20,7 @@ const StudioStack = () => {
                 style={styles.logo1}
                 source={require('../../assets/model3.jpg')}></Image>
                    <Text style={{left:"15%", bottom:40,fontSize:15,marginBottom:-20}}>Male Fashion</Text>
-
+                    <Text style={{color:"red",left:170,top:-40,fontSize:14}}>Follow</Text>
                 </View>
             <Image
                  style={{height:700, width:"100%",}}
@@ -46,6 +47,7 @@ const StudioStack = () => {
                 style={styles.logo1}
                 source={require('../../assets/model2.jpg')}></Image>
                    <Text style={{left:"15%", bottom:40,fontSize:15,marginBottom:-20}}>Female Fashion</Text>
+                   <Text style={{color:"red",left:190,top:-39,fontSize:14}}>Follow</Text>
 
                 </View>
                 <Image
@@ -71,7 +73,8 @@ const StudioStack = () => {
                 style={styles.logo1}
                 source={require('../../assets/modelm2.jpg')}></Image>
                  <Text style={{left:"15%", bottom:40,fontSize:15,marginBottom:-20}}>Style Accessories</Text>
-                 
+                 <Text style={{color:"red",left:190,top:-39,fontSize:14}}>Follow</Text>
+
 
                 </View>
             <Image
@@ -97,6 +100,8 @@ const StudioStack = () => {
                 style={styles.logo1}
                 source={require('../../assets/model3.jpg')}></Image>
                  <Text style={{left:"15%", bottom:40,fontSize:15,marginBottom:-20}}>Rubans Accessories</Text>
+                 <Text style={{color:"red",left:210,top:-39,fontSize:14}}>Follow</Text>
+
                 </View>
             <Image
                 style={styles.image}
