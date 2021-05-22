@@ -46,7 +46,7 @@ const Explore = ({navigation}) => {
                 'Myntra',)
             }>     
             <Image style={{height:30, width:30,top:40,}}
-            source={require('../../assets/order.png')}/>
+            source={require('../../assets/cart.png')}/>
             <Text style={styles.text}>Orders</Text>
             <Text style={styles.text}>Check your order status</Text>
           </TouchableOpacity>
