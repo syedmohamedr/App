@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-
-const CategoryStack = () => {
-    return (
-        <View>
-            <Text>Category</Text>
+import { View, Text, Button } from 'react-native';
+const Category = ({navigation}) => {
+       
+return(
+    <View> 
+        <Button
+        title="Women" 
+        onPress={ ()=> navigation.navigate('WomenStack')}/>
         </View>
     );
 }
 
-export default CategoryStack;
+export default Category;

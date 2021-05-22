@@ -11,7 +11,8 @@ const ExploreStack =() => {
     screenOptions={{
       headerStyle:{backgroundColor:"#fff"},
       headerTintColor:"grey",
-      headerTitleStyle: {fontWeight:'bold'}
+      headerTitleStyle: {fontWeight:'bold'},
+      headerTitle:"Explore"
     }}>
       <Stack.Screen name="Explore" component={Explore} />
       <Stack.Screen name="Myntra" component={MyntraStack} />
