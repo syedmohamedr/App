@@ -11,7 +11,7 @@ const studioScreen =() => {
   return (
     
     <Stack.Navigator>
-      <Stack.Screen name="StudioStack" component={Studio} />
+      <Stack.Screen name="Studio" component={Studio} />
     </Stack.Navigator>
     
 
