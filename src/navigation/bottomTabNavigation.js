@@ -5,6 +5,7 @@ import ExploreStack from './exploreStack';
 import ProfileStack from './profileStack'
 import CategoryStack from './categoryStack';
 import StudioStack from './studioStack';
+import HomeStack from './homeStack';
 const Tab = createBottomTabNavigator();
 
 const HomeScreen = () => {
@@ -15,7 +16,7 @@ const HomeScreen = () => {
 const BottomTabNavigation = () => {
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home" component={HomeScreen} options={{
+      <Tab.Screen name="Home" component={HomeStack} options={{
         tabBarLabel: "Home",
         tabBarIcon: ({focused,color,size})=>(
           <Image 
