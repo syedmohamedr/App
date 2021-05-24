@@ -34,7 +34,7 @@ const Explore = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('MyntraScreen')}>
+            onPress={() => navigation.navigate('Insider')}>
               <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon2.png')}/>
             <Text style={{left:40}}>Myntra Insider</Text>
@@ -42,28 +42,28 @@ const Explore = ({navigation}) => {
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Card')}>
               <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon3.png')}/>
            <Text style={{left:50}}>Gift Cards</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Earn')}>
              <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon4.png')}/>
             <Text style={{left:50}}>Play & Earn</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Move')}>
                <Image style={{height:20, width:40,top:20,}}
             source={require('../../assets/icon5.png')}/>
             <Text style={{left:50}}>Myntra Move</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Refer')}>
                <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon6.png')}/>
             <Text style={{left:50}}>Refer & Earn</Text>
@@ -71,14 +71,14 @@ const Explore = ({navigation}) => {
       
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Coupons')}>
                <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon7.png')}/>
             <Text style={{left:50}}>Scan for Coupons</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Studio')}>
                <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon8.png')}/>
             <Text style={{left:50}}>Myntra Fashion Superstar</Text>

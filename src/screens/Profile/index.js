@@ -130,11 +130,9 @@ const styles=StyleSheet.create({
     marginBottom:10,
     width:"100%",
   },
-  two:{
-    width:"60%",
-    marginLeft:400,
-    left:40,
-  },
+ two:{
+backgroundColor:"#09F62C"
+ },
   image:{
     height:120,
     width:120,
