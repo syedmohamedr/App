@@ -11,6 +11,7 @@ import referStack from '../screens/explore/referStack';
 import CouponStack from '../screens/explore/couponStack';
 import StarStack from '../screens/explore/starStack';
 import StudioStack from '../screens/studioScreen';
+import MasterStack from '../screens/explore/masterStack';
 const Stack = createStackNavigator();
 
 const ExploreStack =() => {
@@ -31,6 +32,8 @@ const ExploreStack =() => {
       <Stack.Screen name="Refer" component={referStack} />
       <Stack.Screen name="Coupons" component={CouponStack} />
       <Stack.Screen name="Studio" component={StudioStack} />
+      <Stack.Screen name="Master" component={MasterStack} />
+
 
 
 

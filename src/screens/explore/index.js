@@ -85,7 +85,7 @@ const Explore = ({navigation}) => {
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Master')}>
                <Image style={{height:20, width:30,top:20,}}
             source={require('../../assets/icon9.jpg')}/>
             <Text style={{left:50}}>Myntra Masterclass</Text>
