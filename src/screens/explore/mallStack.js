@@ -10,7 +10,6 @@ const Stack = createStackNavigator();
 
 const MyntraScreen=()=> <View style={style.one}>
     <ScrollView>
-<Text>Myntra Mall</Text>
 <Text style={{color: colors.home}}> HOUSE OF BRANDS</Text>
 <Text> Brand Store In Focus</Text>
 <Image
@@ -30,13 +29,6 @@ source={require('../../assets/pic4.jpg')}/>
 </ScrollView>
     </View>
 
-const MyntraStack =() => {
-  return (
-    <Stack.Navigator>
-      <Stack.Screen name="Myntra Mall" component={MyntraScreen} />
-    </Stack.Navigator>
-  );
-}
 const style=StyleSheet.create({
     one:{
     justifyContent:"center",
@@ -49,4 +41,4 @@ const style=StyleSheet.create({
         width:200
     }
 })
-export default MyntraStack;
+export default MyntraScreen;

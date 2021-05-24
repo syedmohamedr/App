@@ -43,7 +43,7 @@ const Explore = ({navigation}) => {
             style={Styles.buttonStyle}
             onPress={() =>
               navigation.navigate(
-                'Myntra',)
+                'Order',)
             }>     
             <Image style={{height:30, width:30,top:40,}}
             source={require('../../assets/cart.png')}/>
@@ -52,7 +52,7 @@ const Explore = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('MyntraScreen')}>
+            onPress={() => navigation.navigate('Help')}>
               <Image style={{height:30, width:30,top:40,}}
             source={require('../../assets/help.png')}/>
             <Text style={{left:40}}>Help Center</Text>
@@ -60,7 +60,7 @@ const Explore = ({navigation}) => {
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Wishlist')}>
               <Image style={{height:30, width:30,top:30,}}
             source={require('../../assets/heart.png')}/>
            <Text style={{left:50}}>Wishlist</Text>
@@ -75,14 +75,14 @@ const Explore = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Earn')}>
                <Image style={{height:30, width:30,top:30,}}
             source={require('../../assets/icon3.png')}/>
             <Text style={{left:50}}>Refer & Earn</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('FAQ')}>
             
             <Text style={{left:50}}>FAQs</Text>
           </TouchableOpacity>
