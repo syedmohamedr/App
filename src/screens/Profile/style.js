@@ -2,9 +2,9 @@ import { StyleSheet } from 'react-native'
 
 const Styles = StyleSheet.create({
     container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+        flex: -1,
+        alignItems:"center",
+        justifyContent:"space-between"
       },
       
       header: {
@@ -33,6 +33,9 @@ const Styles = StyleSheet.create({
       btn: {
         width:"50%",
         left:100
+      },
+      two:{
+        marginLeft:400
       },
       separator: {
     
