@@ -10,7 +10,7 @@ const Category = ({navigation}) => {
         <ScrollView>
         <View >
             <View>
-                <Image
+                <Image style={{height:100}}
                 source={require('../../assets/women.jpg')}></Image>
         <Picker
         selectedValue={selectedValue}
@@ -38,7 +38,7 @@ const Category = ({navigation}) => {
       </Picker>
       </View>
       <View>
-          <Image style={{width:"100%"}}
+          <Image style={{width:"100%",height:100}}
           source={require('../../assets/men.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -64,7 +64,7 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image
-          style={{width:"100%"}}
+          style={{width:"100%",height:100}}
           source={require('../../assets/kids.jpg')}></Image>
       <Picker
         selectedValue={selectedValue}
@@ -87,7 +87,7 @@ const Category = ({navigation}) => {
       </Picker>
       </View>  
       <View>
-          <Image
+          <Image style={{height:100}}
           source={require('../../assets/cosmetics.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -102,7 +102,7 @@ const Category = ({navigation}) => {
       </Picker>
       </View>  
       <View>
-          <Image
+          <Image style={{height:100}}
           source={require('../../assets/living.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -123,7 +123,7 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image
-          style={{width:"100%"}}
+          style={{width:"100%",height:100}}
           source={require('../../assets/gadgets.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -138,7 +138,7 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image
-          style={{width:"100%"}}
+          style={{width:"100%",height:100}}
           source={require('../../assets/couple1.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -152,7 +152,7 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image
-          style={{width:"100%"}}
+          style={{width:"100%",height:100}}
           source={require('../../assets/couple2.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -187,7 +187,7 @@ const Category = ({navigation}) => {
       <View>
           
           <Image
-          style={{width:"100%"}}
+          style={{width:"100%",height:100}}
           source={require('../../assets/mall.jpg')}>
           </Image>
      <View>
