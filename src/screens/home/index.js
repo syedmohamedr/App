@@ -22,21 +22,11 @@ const offer = [
 const Home = ({navigation}) => {
     return (
         <ScrollView>
-            
-
             <ScrollView  horizontal={true} style={styles.image2} >  
             <Image source={require('../../assets/kid.png')}/>
             <Image source={require('../../assets/kid.png')}/>
-            
-
-
-                
               </ScrollView>
-        
-
-
-
-        <View style={styles.container}>
+                <View style={styles.container}>
             <View  style={{marginTop:10,width:"100%",marginBottom:10,}}>
             <SliderBox 
 
@@ -69,6 +59,10 @@ const Home = ({navigation}) => {
                  <Text style={styles.text1}> 10%-70% </Text>
                 <Text style={styles.text1}> UP To</Text>
                     
+                </View>
+                <View style={{padding:10,backgroundColor:"white",marginTop:5,backgroundColor:"#f2f3f4",}}>
+                <Text> "Fashion is the armor to survive the reality of everyday life"</Text>
+                <Text style={{left:"30%",fontStyle:"italic",color:"gray"}}> Bill Cunningham</Text>
                 </View>
 
         </View>
@@ -104,7 +98,8 @@ const styles = StyleSheet.create({
       
     },
     image2:{
-
+        
+        height:200,
     },
     text1:{
         fontWeight:"bold",
