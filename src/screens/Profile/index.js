@@ -89,13 +89,13 @@ const Explore = ({navigation}) => {
       
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('About Us')}>
               
             <Text style={{left:50}}>About Us</Text>
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Terms')}>
               
             <Text style={{left:50}}>TERMS OF USE</Text>
             </TouchableOpacity>

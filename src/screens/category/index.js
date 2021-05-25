@@ -10,7 +10,7 @@ const Category = ({navigation}) => {
         <ScrollView>
         <View >
             <View>
-                <Image style={{height:100}}
+                <Image style={{height:120,width:"100%"}}
                 source={require('../../assets/women.jpg')}></Image>
         <Picker
         selectedValue={selectedValue}
@@ -87,7 +87,7 @@ const Category = ({navigation}) => {
       </Picker>
       </View>  
       <View>
-          <Image style={{height:100}}
+          <Image style={{height:100,width:"100%"}}
           source={require('../../assets/cosmetics.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
@@ -102,7 +102,7 @@ const Category = ({navigation}) => {
       </Picker>
       </View>  
       <View>
-          <Image style={{height:100}}
+          <Image style={{height:100,width:"100%"}}
           source={require('../../assets/living.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
