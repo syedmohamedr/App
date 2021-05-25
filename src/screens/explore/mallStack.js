@@ -1,44 +1,67 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View,Text,StyleSheet,Image, ScrollView} from 'react-native';
+import { SliderBox } from "react-native-image-slider-box";
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import colors from '../../config/color';
 import Styles from './style';
 
 
-const Stack = createStackNavigator();
+const Images = [
+    require('../../assets/model2.jpg'),
+    require('../../assets/model3.jpg'),
+    require('../../assets/modelm2.jpg'),
+    require('../../assets/model4.jpg'),
+   ];
+const MyntraScreen=()=> {
+    return (
+        <ScrollView>
+        <View style={styles.container}>
+            
 
-const MyntraScreen=()=> <View style={style.one}>
-    <ScrollView>
-<Text style={{color: colors.home}}> HOUSE OF BRANDS</Text>
-<Text> Brand Store In Focus</Text>
-<Image
-style={style.two}
-source={require('../../assets/pic1.jpg')}/>
-<Text style={{color:"red",fontSize:20,fontFamily:"italic"}}>Best Of Summer Styles</Text>
-<Image
-style={style.two}
-source={require('../../assets/pic2.jpg')}/>
-<Image
-style={style.two}
-source={require('../../assets/pic3.jpeg')}/>
-<Image
-style={style.two}
-source={require('../../assets/pic4.jpg')}/>
+            <View  style={{ height:300,width:"100%",position:'relative',marginTop:10,marginBottom:20,backgroundColor:"#f8f9f9"}}>
+                <Text style={{fontWeight:"bold",alignItems:"center",margin:10}}> Trending Offers </Text>
 
-</ScrollView>
-    </View>
+            <SliderBox 
+                
+                    images={Images}
+                    sliderBoxHeight={400}
+                    onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
+                    dotColor="#FFF"
+                    inactiveDotColor="#f4f6f6"
+                    autoplay
+                    circleLoop
+                    
+            />
+                </View>
+                        <Image
+                        style={{marginBottom:10,height:400,width:"100%",marginTop:30}}
+                    source={require('../../assets/model2.jpg')}/>
+                <View  style={{ height:400,position:'relative',marginTop:10}}>
+            <SliderBox 
 
-const style=StyleSheet.create({
-    one:{
-    justifyContent:"center",
-    alignContent:"center",
-    left:40,
-    top:20,
+                images={Images}
+                sliderBoxHeight={400}
+                onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
+                dotColor="#FFF"
+                inactiveDotColor="#90A4AE"
+                autoplay
+                circleLoop
+            />
+            </View>
+                
+
+        </View>
+        </ScrollView>
+        
+    );
+};
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,  
     },
-    two:{
-        height:200,
-        width:200
-    }
-})
+});
+
+
 export default MyntraScreen;

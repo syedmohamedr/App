@@ -8,6 +8,8 @@ import EarnStack from '../screens/Profile/earnStack';
 import QuestionStack from '../screens/Profile/FAQStack';
 import AboutStack from '../screens/Profile/aboutStack';
 import TermStack from '../screens/Profile/termsStack';
+import Coupons from '../screens/Profile/couponStack';
+import PolicyStack from '../screens/Profile/policyStack';
 
 const Stack = createStackNavigator();
 
@@ -23,6 +25,8 @@ const ProfileStack =() => {
       <Stack.Screen name="FAQ" component={QuestionStack} />
       <Stack.Screen name="About Us" component={AboutStack} />
       <Stack.Screen name="Terms" component={TermStack} />
+      <Stack.Screen name="Coupons" component={Coupons} />
+      <Stack.Screen name="Privacy" component={PolicyStack} />
 
 
     </Stack.Navigator>

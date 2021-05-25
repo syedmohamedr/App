@@ -68,7 +68,7 @@ const Explore = ({navigation}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Coupons')}>
              <Image style={{height:40, width:30,top:20,}}
             source={require('../../assets/icon7.png')}/>
             <Text style={{left:50}}>Scan for Coupons</Text>
@@ -101,7 +101,7 @@ const Explore = ({navigation}) => {
             </TouchableOpacity>
             <TouchableOpacity
             style={Styles.buttonStyle}
-            onPress={() => navigation.navigate('Details')}>
+            onPress={() => navigation.navigate('Privacy')}>
                
             <Text style={{left:50}}>PRIVACY POLICY</Text>
             </TouchableOpacity>
