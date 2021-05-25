@@ -114,10 +114,7 @@ autoplay
 circleLoop
 />
 </View>
-<View style={styles.view}>
-<Image
-source={require('../../assets/slider/bg.jpg')}></Image>
-</View>
+
         </View>
         </ScrollView>
         
