@@ -9,6 +9,7 @@ const InsiderStack = () => {
     return (
         <View>
             <Text>Myntra Insider</Text>
+            <Text>Hi</Text>
         </View>
     );
 }
