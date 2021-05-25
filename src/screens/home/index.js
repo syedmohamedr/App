@@ -1,51 +1,75 @@
 
 import React, { Component } from 'react';
-import { View, Text, StyleSheet,ScrollView,Image } from 'react-native';
+import { View, Text, StyleSheet,ScrollView,Image,Button } from 'react-native';
 import { SliderBox } from "react-native-image-slider-box";
 
 const Images = [
     require('../../assets/model2.jpg'),
     require('../../assets/model3.jpg'),
-    require('../../assets/modelm2.jpg'),
     require('../../assets/model4.jpg'),
+   ];
+const offer = [
+    require('../../assets/pic/offer1.jpg'),
+    require('../../assets/pic/offer2.jpg'),
+    require('../../assets/pic/offer3.jpg'),
+    require('../../assets/pic/offer5.png'),
+    require('../../assets/pic/offer6.png'),
+    require('../../assets/pic/offer7.jpg'),
+    require('../../assets/pic/offer8.jpg'),
+    
+    
    ];
 const Home = ({navigation}) => {
     return (
         <ScrollView>
-        <View style={styles.container}>
             
 
-            <View  style={{ height:300,width:"100%",position:'relative',marginTop:10,marginBottom:20,backgroundColor:"#f8f9f9"}}>
-                <Text style={{fontWeight:"bold",alignItems:"center",margin:10}}> Trending Offers </Text>
+            <ScrollView  horizontal={true} style={styles.image2} >  
+            <Image source={require('../../assets/kid.png')}/>
+            <Image source={require('../../assets/kid.png')}/>
+            
 
-            <SliderBox 
+
                 
+              </ScrollView>
+        
+
+
+
+        <View style={styles.container}>
+            <View  style={{marginTop:10,width:"100%",marginBottom:10,}}>
+            <SliderBox 
+
+                images={offer}
+                sliderBoxHeight={120}
+                onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
+                dotColor="#FFF"
+                inactiveDotColor="#90A4AE"
+                circleLoop
+            />
+            </View>
+                
+                
+                    <Image
+                    style={styles.image1}
+                    source={require('../../assets/pic/kid.jpg')}/>
+
+            <View  style={styles.first}>
+                <Text style={{fontWeight:"bold",alignItems:"center",padding:4,fontSize:15}}> Trending Offers </Text>
+               
+                 <SliderBox 
                     images={Images}
-                    sliderBoxHeight={400}
                     onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
                     dotColor="#FFF"
                     inactiveDotColor="#f4f6f6"
                     autoplay
                     circleLoop
+                    />
+                     <Text style={styles.text1}> Off</Text>
+                 <Text style={styles.text1}> 10%-70% </Text>
+                <Text style={styles.text1}> UP To</Text>
                     
-            />
                 </View>
-                        <Image
-                        style={{marginBottom:10,height:400,width:"100%",marginTop:30}}
-                    source={require('../../assets/model2.jpg')}/>
-                <View  style={{ height:400,position:'relative',marginTop:10}}>
-            <SliderBox 
-
-                images={Images}
-                sliderBoxHeight={400}
-                onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
-                dotColor="#FFF"
-                inactiveDotColor="#90A4AE"
-                autoplay
-                circleLoop
-            />
-            </View>
-                
 
         </View>
         </ScrollView>
@@ -55,7 +79,43 @@ const Home = ({navigation}) => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,  
+        flex: 1, 
+        backgroundColor:"#ecf0f1", 
+        alignContent:"center",
+        justifyContent:"center",
+        height:"100%",
+    },
+    first:{
+        height:250,
+        width:"100%",
+        position:'relative',
+        marginTop:5,
+        backgroundColor:"white",
+        
+        
+
+    },
+    image1:{
+        marginBottom:1,
+        height:250,
+        width:"100%",
+        borderTopWidth:5,
+        borderColor:"#f8f9f9",
+      
+    },
+    image2:{
+
+    },
+    text1:{
+        fontWeight:"bold",
+        alignItems:"center",
+        marginTop:-70,
+        left:"70%",
+        top:-40,
+        fontSize:25,
+        color:"white",
+        marginBottom:10,
+
     },
 });
 
