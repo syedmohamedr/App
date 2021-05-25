@@ -46,7 +46,7 @@ const MyntraScreen=()=> {
                     circleLoop
             />
             </View>
-                <View style={{marginBottom:30,top:50}}>
+                <View style={{marginBottom:-50,top:50}}>
                 <Text style={{left:20,color:"red",left:150,fontWeight:"bold",fontStyle:"italic",marginBottom:10}}>Shop Essentials</Text>
                 <Image style={{borderRadius:80,height:100,width:100,top:20,borderColor:"red",borderWidth:1}}
                 source={require('../../assets/slider/kurta.jpg')}></Image>
@@ -98,17 +98,23 @@ const MyntraScreen=()=> {
                                 <Text style={{left:299,top:-862}}>Min 40% Off</Text>
                 </View>
                 <View style={{ height:"50%",top:-750,width:"100%"}}>
-                    <Text>Hi</Text>
-                    <Text style={{top:-10,marginBottom:10,fontWeight:"bold",left:150,color:"red",marginBottom:20}}>New Brand Store</Text>
+                <Image style={{height:100,top:400}}
+                    source={require('../../assets/slider/bg.jpg')}></Image>
+                    <Text style={{top:330,color:"black",left:100,fontSize:20}}>"The joy of dressing is an art"</Text>
+                    <Text style={{top:330,color:"black",left:150,fontSize:20,fontStyle:"italic"}}>--John Galliano</Text>
+                    <Text style={{top:-10,marginBottom:10,fontWeight:"bold",left:150,color:"red"}}>New Brand Store</Text>
                 <SliderBox
-images={New}
-onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
-dotColor="black"
-inactiveDotColor="#90A4AE"
-autoplay
-circleLoop
-/>
-</View>
+                    images={New}
+                    onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
+                    dotColor="black"
+                    inactiveDotColor="#90A4AE"
+                    autoplay
+                    circleLoop
+                    />
+                    </View>
+                    <View style={{bottom:20}}>
+                  
+                    </View>
         </View>
         </ScrollView>
     );
