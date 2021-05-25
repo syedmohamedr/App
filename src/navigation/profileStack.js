@@ -6,6 +6,8 @@ import ModalStack from '../screens/Profile/modalStack';
 import WishStack from '../screens/Profile/wishStack';
 import EarnStack from '../screens/Profile/earnStack';
 import QuestionStack from '../screens/Profile/FAQStack';
+import AboutStack from '../screens/Profile/aboutStack';
+import TermStack from '../screens/Profile/termsStack';
 
 const Stack = createStackNavigator();
 
@@ -19,6 +21,9 @@ const ProfileStack =() => {
       <Stack.Screen name="Wishlist" component={WishStack} />
       <Stack.Screen name="Earn" component={EarnStack} />
       <Stack.Screen name="FAQ" component={QuestionStack} />
+      <Stack.Screen name="About Us" component={AboutStack} />
+      <Stack.Screen name="Terms" component={TermStack} />
+
 
     </Stack.Navigator>
   );
