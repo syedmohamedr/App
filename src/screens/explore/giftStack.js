@@ -1,12 +1,16 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text,Image } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { ScrollView } from 'react-native-gesture-handler';
 
 const CardStack = () => {
     return (
-        <View>
-            <Text>cardStack</Text>
+        <ScrollView>
+        <View style={{height:1000}}>
+                <Image 
+                sourcre={require('../../assets/slider/bg.jpg')}></Image>
         </View>
+        </ScrollView>
     );
 }
 
