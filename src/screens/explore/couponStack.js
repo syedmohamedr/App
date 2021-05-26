@@ -52,8 +52,9 @@ const Coupons = () => {
     },
     modalView: {
       margin: 20,
+      bottom:-187,
+      width:"100%",
       backgroundColor: "white",
-      borderRadius: 20,
       marginTop:40,
       padding: 45,
       alignItems: "center",

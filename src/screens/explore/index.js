@@ -106,7 +106,7 @@ const styles=StyleSheet.create({
   text1:{
     left:210,
     top: -18,
-    color:"red"
+    color:"red",
   }
 })
 
