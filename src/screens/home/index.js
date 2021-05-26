@@ -9,13 +9,13 @@ const Images = [
     require('../../assets/model4.jpg'),
    ];
 const offer = [
-    require('../../assets/pic/offer1.jpg'),
+    require('../../assets/pic/offer8.jpg'),
     require('../../assets/pic/offer2.jpg'),
     require('../../assets/pic/offer3.jpg'),
     require('../../assets/pic/offer5.png'),
     require('../../assets/pic/offer6.png'),
     require('../../assets/pic/offer7.jpg'),
-    require('../../assets/pic/offer8.jpg'),
+    require('../../assets/pic/offer1.jpg'),
     
     
    ];
