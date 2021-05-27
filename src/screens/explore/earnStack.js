@@ -1,11 +1,12 @@
 
 import React, { Component } from 'react';
-import { View, Text, StyleSheet,ScrollView,Image, } from 'react-native';
+import { View, Text, StyleSheet,ScrollView,Image, TouchableOpacity, } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const EarnStack = () => {
     return (
         <ScrollView>
+            <View style={{height:1750}}>
             <View style={{backgroundColor:"#5d3eaf",height:130,width:"100%"}}>
             <Text style={{fontSize:50,fontWeight:"bold",color:"white",padding:20}}>Play</Text>
             <Text style={{fontSize:25,fontWeight:"bold",color:"white", left:20,top:-30}}>
@@ -75,8 +76,14 @@ const EarnStack = () => {
                     style={{height:200,width:140,borderRadius:10, top:-100,marginBottom:-100 }}
                         source={require('../../assets/pic/anno.png')}></Image> 
                         </View>
-
-
+                        <View style={{bottom:10,backgroundColor:"#fff",top:10,height:10}}>
+                        <TouchableOpacity style={{backgroundColor:"#fff",color:"red"}}>
+                                <Text style={{left:80,color:"blue"}}>Frequently Asked Questions</Text>
+                                <Image style={{height:15,width:15,left:50,top:-15}}
+                                source={require('../../assets/icons/chat.png')}></Image>
+                            </TouchableOpacity>
+</View>
+</View>
 
         </ScrollView>
     );
