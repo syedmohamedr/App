@@ -27,8 +27,6 @@ const ProfileStack =() => {
       <Stack.Screen name="Terms" component={TermStack} />
       <Stack.Screen name="Coupons" component={Coupons} />
       <Stack.Screen name="Privacy" component={PolicyStack} />
-
-
     </Stack.Navigator>
   );
 }
