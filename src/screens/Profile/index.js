@@ -52,52 +52,52 @@ const Explore = ({navigation}) => {
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Help')}>
-              <Image style={{height:30, width:30,top:45,marginTop:-40}}
+              <Image style={{height:30, width:30,top:40,marginTop:-40}}
             source={require('../../assets/help.png')}/>
-            <Text style={{left:40,fontWeight:"bold",top:15,height:20}}>Help Center</Text>
-            <Text style={{left:37,top: 11,color:"black",fontSize:12}}> Help regarding your recent purchase</Text>
+            <Text style={{left:40,fontWeight:"bold",top:10,height:20}}>Help Center</Text>
+            <Text style={{left:37,top: 7,color:"black",fontSize:12}}> Help regarding your recent purchase</Text>
           </TouchableOpacity> 
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Wishlist')}>
-              <Image style={{height:30, width:30,top:40,marginTop:-40}}
+              <Image style={{height:30, width:30,top:35,marginTop:-40}}
             source={require('../../assets/heart.png')}/>
-           <Text style={{left:40,fontWeight:"bold",top:10}}>Wishlist</Text>
-           <Text style={{left:41,fontSize:12,top:10}}>Your most loved styles</Text>
+           <Text style={{left:40,fontWeight:"bold",top:5}}>Wishlist</Text>
+           <Text style={{left:41,fontSize:12,top:5}}>Your most loved styles</Text>
           </TouchableOpacity>
           </View>
           <View style={{marginBottom:15}}>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Coupons')}>
-             <Image style={{height:40, width:30,top:30,marginTop:-40}}
+             <Image style={{height:35, width:30,top:30,marginTop:-40}}
             source={require('../../assets/icon7.png')}/>
-            <Text style={{left:50,fontWeight:"bold"}}>Scan for Coupons</Text>
+            <Text style={{left:40,fontWeight:"bold",height:20,top:5}}>Scan for Coupons</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={Styles.buttonStyle}
             onPress={() => navigation.navigate('Earn')}>
                <Image style={{height:35, width:35,top:20,marginTop:-30}}
             source={require('../../assets/icon3.png')}/>
-            <Text style={{left:50,fontWeight:"bold",top:-5,}}>Refer & Earn</Text>
+            <Text style={{left:40,fontWeight:"bold",top:-5,}}>Refer & Earn</Text>
           </TouchableOpacity>
           </View>
           <View style={{backgroundColor:"white",padding:20}}>
           <TouchableOpacity
             onPress={() => navigation.navigate('FAQ')}>
-            <Text style={{left:50,color:"gray",marginBottom:10}}>FAQs</Text>
+            <Text style={{left:40,color:"gray",marginBottom:10}}>FAQs</Text>
           </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('About Us')}>
-            <Text style={{left:50,color:"gray",marginBottom:10 }}>About Us</Text>
+            <Text style={{left:40,color:"gray",marginBottom:10 }}>About Us</Text>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('Terms')}>
-            <Text style={{left:50,color:"gray",marginBottom:10}}>TERMS OF USE</Text>
+            <Text style={{left:40,color:"gray",marginBottom:10}}>TERMS OF USE</Text>
             </TouchableOpacity>
             <TouchableOpacity
             onPress={() => navigation.navigate('Privacy')}>
-            <Text style={{left:50,color:"gray",marginBottom:10,}}>PRIVACY POLICY</Text>
+            <Text style={{left:40,color:"gray",marginBottom:10,}}>PRIVACY POLICY</Text>
             </TouchableOpacity>
             </View>
 
