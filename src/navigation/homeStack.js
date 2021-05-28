@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { View,Text } from 'react-native';
 import HomeScreen from '../screens/home';
 
@@ -13,7 +13,7 @@ const HomeStack =({navigation}) => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{headerTitleAlign:"center", headerLeft: () => (
-            <Icon.Button name="ios-menu" size={20} width={39} height={39}backgroundColor="grey" onPress={() => navigation.openDrawer()}></Icon.Button>
+            <Icon.Button name="gear" size={40} width={60} height={60} color="red" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
         )
         }} />
     </Stack.Navigator>
