@@ -10,6 +10,10 @@ import StudioStack from './src/screens/studioScreen';
 import Explore from './src/screens/explore';
 import Profile from './src/navigation/profileStack';
 import ProfileStack from './src/navigation/bottomTabNavigation';
+import ExploreStack from './src/navigation/exploreStack';
+import CategoryStack from './src/navigation/categoryStack';
+import QuestionStack from './src/screens/Profile/FAQStack';
+import ModalStack from './src/screens/Profile/modalStack';
 
 const HomeStack = createDrawerNavigator();
 const Drawer = createDrawerNavigator();
@@ -29,8 +33,14 @@ const App = () => {
     return (
       <NavigationContainer>
           <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={ProfileStack} />
-   
+        <Drawer.Screen name="Home" component={ProfileStack} options={{
+            title:"Home"}}/>
+                    <Drawer.Screen name="Categories" component={CategoryStack} options={{ title:"Shop By Categories"}}/>
+        <Drawer.Screen name="Orders" component={ExploreStack} options={{ title:"Orders"}}/>
+        <Drawer.Screen name="FAQs" component={QuestionStack} />
+        <Drawer.Screen name="CONTACT US" component={ModalStack} />
+        <Drawer.Screen name="LEGAL" component={ModalStack} />
+
       </Drawer.Navigator>
        </NavigationContainer>
 
