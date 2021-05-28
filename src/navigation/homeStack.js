@@ -16,15 +16,15 @@ const HomeStack =() => {
     
   );
 }
-const DrawerStack = () => {
-  return (
-      <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={Home} />
-        <Drawer.Screen name="Notifications" component={Explore} />
-      </Drawer.Navigator>
-    </NavigationContainer>
-  );
-}
+// const DrawerStack = () => {
+//   return (
+//       <NavigationContainer>
+//       <Drawer.Navigator initialRouteName="Home">
+//         <Drawer.Screen name="Home" component={Home} />
+//         <Drawer.Screen name="Notifications" component={Explore} />
+//       </Drawer.Navigator>
+//     </NavigationContainer>
+//   );
+// }
 
 export default HomeStack;
