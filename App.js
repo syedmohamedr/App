@@ -35,9 +35,10 @@ const App = () => {
       <NavigationContainer>
           <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={ProfileStack} options={{
-            title:"Home", headerLeft:()=>(
-                <Icon.Button name="gear" size={25} backgroundColor="#fff" onPress={() =>navigation.openDrawer()}></Icon.Button>
-            )}}/>
+            title:"Home", headerLeft: () => (
+                <Icon.Button name="android" size={25} backgroundColor="#009387" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )
+            }} />
                     <Drawer.Screen name="Categories" component={CategoryStack} options={{ title:"Shop By Categories", headerLeft:()=>(
                 <Icon.Button name="gear" size={25} backgroundColor="#fff" onPress={() =>navigation.openDrawer()}></Icon.Button>)}}/>
         <Drawer.Screen name="Orders" component={ExploreStack} options={{ title:"Orders"}}/>
