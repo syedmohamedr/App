@@ -10,13 +10,13 @@ const InsiderStack = () => {
           <View style={{backgroundColor:"black",height:"100%"}}>
                     <ScrollView>
               <View style={{height:400}}>
-                  <Image style={{height:29,width:29,left:250,top:10}}
+                  <Image style={{height:29,width:29,left:"80%",top:10}}
               source={require('../../assets/myntra.png')}></Image>
-              <Text style={{color:"yellow",left:230,top:10,fontSize:20}}>iNSIDER</Text>
+              <Text style={{color:"yellow",left:"75%",fontSize:20,fontWeight:"bold",top:5}}>iNSIDER</Text>
               <Image style={{top:10,width:"100%",height:300}}
               source={require('../../assets/thumbs.jpg')}></Image>
-              <Text style={{top:-40,left:80}}>NOTHING IS AS REWARDING</Text>
-              <Text style={{color:"yellow",top:-38,left:80}}>as being a Myntra Insider!</Text>
+              <Text style={{top:-40,left:"28%"}}>NOTHING IS AS REWARDING</Text>
+              <Text style={{color:"yellow",top:-38,left:"30%"}}>as being a Myntra Insider!</Text>
               </View>
               <View style={{height:400}}>
                   <Text style={{color:"gold",left:30,top:20}}>Fashion</Text>
