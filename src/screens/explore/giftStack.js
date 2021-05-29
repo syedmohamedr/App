@@ -33,7 +33,7 @@ const CardStack = () => {
             source={require('../../assets/icons/circle.jpg')}></Image>
                         <Text style={{top:-105,left:20,color:"red"}}>Rs. 500</Text>
                         <Text style={{top:-125,left:170,color:"red"}}>Rs. 1,000</Text>
-                        <Text style={{top:-145,left:330,color:"red"}}>Rs. 2,000</Text>
+                        <Text style={{top:-145,left:310,color:"red"}}>Rs. 2,000</Text>
                         <Image style={{borderRadius:300,top:-50,width:100,height:100,left:5}}
             source={require('../../assets/icons/circle.jpg')}></Image>
            <Image style={{borderRadius:300,top:150,width:100,height:100,left:150,top:-150}}
@@ -42,7 +42,7 @@ const CardStack = () => {
             source={require('../../assets/icons/circle.jpg')}></Image>
               <Text style={{top:-305,left:20,color:"red"}}>Rs. 3,000</Text>
                         <Text style={{top:-322,left:170,color:"red"}}>Rs. 4,000</Text>
-                        <Text style={{top:-340,left:330,color:"red"}}>Rs. 5,000</Text>
+                        <Text style={{top:-340,left:310,color:"red"}}>Rs. 5,000</Text>
                         <Text style={{color:"#F609C0",left:150,top:-180,fontWeight:"bold"}}>Shop By Occasion</Text>
                         <Text style={{left:110,top:-170}}>Gift cards for every celebration</Text>
                         <Image
