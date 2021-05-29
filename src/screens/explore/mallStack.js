@@ -11,10 +11,8 @@ const Images = [
     require(('../../assets/slider/traditonal.jpg')),
     require(('../../assets/slider/skechers.jpg')),
     require(('../../assets/slider/couples.jpg')),
-    require(('../../assets/slider/sports.jpg')),
     require(('../../assets/slider/casual.jpg')),
     require(('../../assets/slider/elegant.jpg')),
-    require(('../../assets/slider/denima.jpg')),
    ];
    const New = [
     require(('../../assets/slider/one.jpg')),
@@ -30,29 +28,37 @@ const MyntraScreen=()=> {
     return (
         <ScrollView>
         <View style={styles.container}>
-            <View  style={{ height:100,width:"100%",position:'relative',marginTop:5,marginBottom:20,backgroundColor:"#F8F9F9"}}>
-                <Text style={{left:150,fontSize:20,top:35}}>Myntra </Text>
-                <Text style={{color:"brown",left:50,fontSize:50}}>Mall</Text>
-                <Text style={{color:"red",left:50,top:-10}}>HOUSE OF BRANDS</Text>
-                <Text style={{left:20,top:20}}>Brands In Focus</Text>
+            <View  style={{ height:100,width:"100%",position:'relative',marginTop:1,marginBottom:20,}}>
+                <Text style={{left:"48%",fontSize:15,top:20,color:"#4c4647"}}>MYNTRA </Text>
+                <Text style={{color:"#d35400",left:"30%",fontSize:80,top:-30}}>M</Text>
+                <Text style={{color:"#d35400",left:"47%",fontSize:45,top:-94,marginBottom:-40}}>all</Text>
+                <Text style={{left:"30%",top:-60,color:"black"}}>HOUSE OF BRANDS</Text>
                     </View>
-                <View>
+                <View style={{width:"100%",backgroundColor:"#fff",height:700}}>
+                <Text style={{left:"25%",top:40,color:"#2a2a2a",fontSize:20,fontWeight:"bold"}}>Brand Stores</Text>
+                <Text style={{left:"56%",top:13,color:"#d35400",fontSize:20,fontStyle:"italic",marginBottom:-30}}>In Focus</Text>
+                <View style={{top:70,border:1,borderColor:"gray",}}>
             <SliderBox
                     images={Images}
                     onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
                     dotColor="black"
+                    height={600}
                     inactiveDotColor="#F4F6F6"
                     autoplay
                     circleLoop
             />
             </View>
-                <View style={{marginBottom:-50,top:50}}>
-                <Text style={{left:20,color:"red",left:150,fontWeight:"bold",fontStyle:"italic",marginBottom:10}}>Shop Essentials</Text>
-                <Image style={{borderRadius:80,height:100,width:100,top:20,borderColor:"red",borderWidth:1}}
+            </View>
+                <View style={{marginBottom:-800,top:10,backgroundColor:"#fff",width:"100%"}}>
+                <Text style={{left:20,color:"#d35400",left:"34%",fontWeight:"bold",top:27,
+                   fontStyle:"italic",fontSize:20,textDecorationLine:"underline"}}>Shop </Text>
+                    <Text style={{left:"45%",color:"#2a2a2a",fontWeight:"bold",
+                marginBottom:30,fontSize:20,textDecorationLine:"underline"}}> Essentials</Text>
+                <Image style={{borderRadius:80,height:100,width:100,top:20,borderColor:"red",borderWidth:1,left:10}}
                 source={require('../../assets/slider/kurta.jpg')}></Image>
                 <Text style={{fontWeight:"bold",top:30,left:10}}>Printed Kurtas</Text>
                 <Text style={{left:10,top:32}}>30-50% Off</Text>
-                <Image style={{borderRadius:80,height:110,width:100,top:-122,left:130,borderColor:"red",borderWidth:1}}
+                <Image style={{borderRadius:100,height:110,width:100,top:-122,left:140,borderColor:"red",borderWidth:1}}
                 source={require('../../assets/slider/kids.jpg')}></Image>
                 <Text style={{left:135,top:-117,fontWeight:"bold"}}>Everyday Tees</Text>
                 <Text style={{left:132,top:-115}}>Starting @ Rs.149</Text>
@@ -68,7 +74,7 @@ const MyntraScreen=()=> {
                 source={require('../../assets/slider/kurta2.jpg')}></Image>
                 <Text style={{fontWeight:"bold",left:135,top:-332}}>Comfy Kurta Sets</Text>
                 <Text style={{left:135,top:-332}}>Starting @ Rs. 849</Text>
-                <Image style={{borderRadius:80,height:100,width:100,left:275,top:-480,borderColor:"red",borderWidth:1}}
+                <Image style={{borderRadius:80,height:100,width:100,left:290,top:-480,borderColor:"red",borderWidth:1}}
                 source={require('../../assets/slider/crop.jpg')}></Image>
                 <Text style={{fontWeight:"bold",left:275,top:-470}}>Stylish Crop Tops</Text>
                 <Text style={{left:275,top:-470}}>Starting @ Rs. 399</Text>
@@ -80,7 +86,7 @@ const MyntraScreen=()=> {
                 source={require('../../assets/slider/marks.jpg')}></Image>
                  <Text style={{fontWeight:"bold",left:155,top:-526}}>WFH Populars</Text>
                 <Text style={{left:155,top:-528}}>Starting @ Rs. 399</Text>
-                 <Image style={{borderRadius:80,height:100,width:100,left:295,top:-680,borderColor:"red",borderWidth:1}}
+                 <Image style={{borderRadius:80,height:100,width:100,left:290,top:-680,borderColor:"red",borderWidth:1}}
                 source={require('../../assets/slider/workout.jpg')}></Image>
                 <Text style={{fontWeight:"bold",left:298,top:-663}}>Workout Wear</Text>
                  <Text style={{left:298,top:-666}}>Min 40% Off</Text>
@@ -92,25 +98,30 @@ const MyntraScreen=()=> {
                 source={require('../../assets/slider/watch.jpg')}></Image>
                 <Text style={{fontWeight:"bold",left:155,top:-730}}>Styles For All</Text>
                 <Text style={{left:155,top:-723}}>Starting @ Rs. 4250</Text>
-                <Image style={{borderRadius:80,height:100,width:100,left:295,top:-875,borderColor:"red",borderWidth:1}}
+                <Image style={{borderRadius:80,height:100,width:100,left:290,top:-875,borderColor:"red",borderWidth:1}}
                 source={require('../../assets/slider/trendy.jpg')}></Image>
                                 <Text style={{fontWeight:"bold",left:295,top:-868}}>Trendy Tops</Text>
                                 <Text style={{left:299,top:-862}}>Min 40% Off</Text>
                 </View>
-                <View style={{ height:"50%",top:-750,width:"100%"}}>
-                <Image style={{height:100,top:400}}
-                    source={require('../../assets/slider/bg.jpg')}></Image>
-                    <Text style={{top:330,color:"black",left:100,fontSize:20}}>"The joy of dressing is an art"</Text>
-                    <Text style={{top:330,color:"black",left:150,fontSize:20,fontStyle:"italic"}}>--John Galliano</Text>
-                    <Text style={{top:-10,marginBottom:10,fontWeight:"bold",left:150,color:"red"}}>New Brand Store</Text>
+                <View style={{width:"100%",borderTopWidth:50,borderColor:"#fff",}}>
+                <Text style={{top:-30,marginBottom:10,fontWeight:"bold",left:"30%",
+                    color:"#d35400",fontSize:20,textDecorationLine:"underline"}}>New Brand Store</Text>
                 <SliderBox
                     images={New}
                     onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
                     dotColor="black"
                     inactiveDotColor="#90A4AE"
+                    height={400}
+                    width={390}
                     autoplay
                     circleLoop
                     />
+                <Image style={{height:100,top:10}}
+                    source={require('../../assets/slider/bg.jpg')}></Image>
+                    <Text style={{top:-80,color:"black",left:"17%",fontSize:20}}>"The joy of dressing is an art"</Text>
+                    <Text style={{top:-80,color:"black",left:150,fontSize:20,fontStyle:"italic"}}>--John Galliano</Text>
+                  
+                
                     </View>
                     <View style={{bottom:20}}>
                   
@@ -122,7 +133,8 @@ const MyntraScreen=()=> {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        height:1800
+        height:"100%",
+        backgroundColor:"#f4f6f7",
     },
     view:{
         flex:1,
