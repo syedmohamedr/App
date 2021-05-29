@@ -16,9 +16,9 @@ const CenterStack = () => {
             source={require('../../assets/call.jpg')}></Image>
             <View>
                 <Text style={{left:30,fontSize:15}}>
-                    Please Log In, if you have queries related to your recent
+                    Please Log In, if you have queries related to your 
                 </Text>
-                <Text style={{left:150,marginBottom:20}}>purchases.</Text>
+                <Text style={{left:130,marginBottom:20}}>recent purchases.</Text>
                 <TouchableOpacity style={{left:130,padding:16,backgroundColor:"#09F62C",width:"30%",alignItems:"center"}}
                 >
                     <Text style={{color:"black"}}>LOG IN</Text>

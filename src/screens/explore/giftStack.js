@@ -7,8 +7,8 @@ const CardStack = () => {
     return (
         <ScrollView>
         <View style={{height:2100}}>
-             <Text style={{color:"#F609C0",left:100,top:80,fontSize:18}}>Popular Gift Cards</Text>
-             <Text style={{left:90,top:84,fontSize:14}}>Make each thought Count</Text>
+             <Text style={{color:"#F609C0",left:110,top:80,fontSize:18}}>Popular Gift Cards</Text>
+             <Text style={{left:100,top:84,fontSize:14}}>Make each thought Count</Text>
              <Pressable><Image
              style={{height:200,width:200,top:100,left:80,borderWidth:2,borderColor:"pink",borderRadius:20}}
              source={require('../../assets/icons/birthday.jpg')}></Image></Pressable>
@@ -25,20 +25,20 @@ const CardStack = () => {
              </TouchableOpacity>
              <Text style={{left:120,top:140,color:"orange",fontSize:16}}>Shop By Price Range</Text>
              <Text style={{left:120,top:140,color:"black",fontSize:14}}>A gift for every budget</Text>
-            <Image style={{borderRadius:300,top:150,width:100,height:100}}
+            <Image style={{borderRadius:300,top:150,width:100,height:100,left:5}}
             source={require('../../assets/icons/circle.jpg')}></Image>
            <Image style={{borderRadius:300,top:150,width:100,height:100,left:150,top:50}}
             source={require('../../assets/icons/circle.jpg')}></Image>
-          <Image style={{borderRadius:300,top:150,width:100,height:100,left:310,top:-52}}
+          <Image style={{borderRadius:300,top:150,width:100,height:100,left:290,top:-52}}
             source={require('../../assets/icons/circle.jpg')}></Image>
                         <Text style={{top:-105,left:20,color:"red"}}>Rs. 500</Text>
                         <Text style={{top:-125,left:170,color:"red"}}>Rs. 1,000</Text>
                         <Text style={{top:-145,left:330,color:"red"}}>Rs. 2,000</Text>
-                        <Image style={{borderRadius:300,top:-50,width:100,height:100}}
+                        <Image style={{borderRadius:300,top:-50,width:100,height:100,left:5}}
             source={require('../../assets/icons/circle.jpg')}></Image>
            <Image style={{borderRadius:300,top:150,width:100,height:100,left:150,top:-150}}
             source={require('../../assets/icons/circle.jpg')}></Image>
-          <Image style={{borderRadius:300,top:150,width:100,height:100,left:310,top:-250}}
+          <Image style={{borderRadius:300,top:150,width:100,height:100,left:290,top:-250}}
             source={require('../../assets/icons/circle.jpg')}></Image>
               <Text style={{top:-305,left:20,color:"red"}}>Rs. 3,000</Text>
                         <Text style={{top:-322,left:170,color:"red"}}>Rs. 4,000</Text>
@@ -77,19 +77,19 @@ const CardStack = () => {
                                                     <Text style={{top:-726,left:222}}>For home sweet home</Text>
         <Text style={{top:-600,color:"orange",left:105,fontSize:15}}>Season's Special Gift Cards</Text>
         <Text style={{top:-600,left:110}}>Give them the gift of choice</Text>
-        <Image style={{borderRadius:300,top:-600,width:100,height:100}}
+        <Image style={{borderRadius:300,top:-600,width:100,height:100,left:5}}
             source={require('../../assets/icons/circle.jpg')}></Image> 
              <Image style={{borderRadius:300,top:-697,width:100,height:100,left:160}}
             source={require('../../assets/icons/circle.jpg')}></Image> 
-             <Image style={{borderRadius:300,top:-797,width:100,height:100,left:310}}
+             <Image style={{borderRadius:300,top:-797,width:100,height:100,left:290}}
             source={require('../../assets/icons/circle.jpg')}></Image>
-            <Text style={{top:-880,left:20}}>Check</Text>
-            <Text style={{top:-880,left:20}}>your</Text>
-            <Text style={{top:-880,left:20}}>balance</Text>
-            <Text style={{top:-930,left:180}}>Corporate</Text>
-            <Text style={{top:-930,left:180}}>&Bulk</Text>
-            <Text style={{top:-930,left:180}}>Purchases</Text>
-            <Text style={{top:-970,left:340}}>FAQ's</Text>
+            <Text style={{top:-880,left:30}}>Check</Text>
+            <Text style={{top:-880,left:30}}>your</Text>
+            <Text style={{top:-880,left:30}}>balance</Text>
+            <Text style={{top:-940,left:180}}>Corporate</Text>
+            <Text style={{top:-940,left:180}}>&Bulk</Text>
+            <Text style={{top:-940,left:180}}>Purchases</Text>
+            <Text style={{top:-970,left:320}}>FAQ's</Text>
         </View>
         </ScrollView>
     );
