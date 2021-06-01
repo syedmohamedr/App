@@ -34,13 +34,25 @@ const App = () => {
       <NavigationContainer>
           <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={ProfileStack} options={{
-            title:"Home"
+            title:"Home",headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )
             }} />
-                    <Drawer.Screen name="Categories" component={CategoryStack} options={{ title:"Shop By Categories"}}/>
-        <Drawer.Screen name="Orders" component={ModalStack} options={{ title:"Orders"}}/>
-        <Drawer.Screen name="CONTACT US" component={ModalStack} />
-        <Drawer.Screen name="FAQs" component={QuestionStack} />
-        <Drawer.Screen name="LEGAL" component={PolicyStack} />
+                    <Drawer.Screen name="Categories" component={CategoryStack} options={{ title:"Shop By Categories",headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )}}/>
+        <Drawer.Screen name="Orders" component={ModalStack} options={{ title:"Orders",headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )}}/>
+        <Drawer.Screen name="CONTACT US" component={ModalStack} options={{headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )}} />
+        <Drawer.Screen name="FAQs" component={QuestionStack} options={{headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )}} />
+        <Drawer.Screen name="LEGAL" component={PolicyStack} options={{headerLeft: () => (
+                <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+            )}}/>
 
       </Drawer.Navigator>
        </NavigationContainer>

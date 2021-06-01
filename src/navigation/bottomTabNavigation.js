@@ -92,8 +92,8 @@ const BottomTabNavigation = () => {
             : require('../assets/profile.jpg')
           }
           style={{
-            width:size,
-            height:size,
+            width:30,
+            height:45,
             borderRadius:size,
           }}
         />)
