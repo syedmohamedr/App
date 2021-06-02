@@ -52,6 +52,7 @@ const App = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={styles.container}>
+      <Text style={{margin:10,fontSize:25,color:"#606161",marginBottom:30}}>Myntra/About</Text>
         <FlatList
           data={listItems}
           ItemSeparatorComponent={ItemSeparatorView}

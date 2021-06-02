@@ -22,10 +22,12 @@
     "react-native-gesture-handler": "^1.10.3",
     "react-native-image-slider-box": "^1.0.12",
     "react-native-material-dropdown": "^0.11.1",
+    "react-native-paper": "^4.9.1",
     "react-native-reanimated": "^2.1.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.2.0",
-    "react-native-vector-icons": "^8.1.0"
+    "react-native-vector-icons": "^8.1.0",
+    "react-phone-number-input": "^3.1.23"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

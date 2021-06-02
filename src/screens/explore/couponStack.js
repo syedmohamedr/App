@@ -5,40 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 const Coupons = () => {
-    const [modalVisible, setModalVisible] = useState(false);
     return (
-      <View style={styles.centeredView}>
-        <Modal
-          animationType="slide"
-          transparent={true}
-          visible={modalVisible}
-          onRequestClose={() => {
-            Alert.alert("Modal has been closed.");
-            setModalVisible(!modalVisible);
-          }}
-        >
-          <View style={styles.centeredView}>
-            <View style={styles.modalView}>
-                <Text>Login or Signup</Text>
-              <TextInput
-                  placeholder="Phone number*"></TextInput>
-                  <Text>By continuing, I agree to the </Text>
-                  <Text style={{color:"red"}}>Terms of use & Privacy Policy</Text>
-              <Pressable
-                style={[styles.button, styles.buttonClose]}
-                onPress={() => setModalVisible(!modalVisible)}
-              >
-                <Text style={styles.textStyle}>CONTINUE</Text>
-              </Pressable>
-            </View>
-          </View>
-        </Modal>
-        <Pressable
-          style={[styles.button, styles.buttonOpen]}
-          onPress={() => setModalVisible(true)}
-        >
-          <Text style={styles.textStyle}>LOGIN/SIGNUP</Text>
-        </Pressable>
+      <View>
+        <Text>haiiiiiii</Text>
       </View>
     );
   };
