@@ -11,10 +11,12 @@ const Category = ({navigation}) => {
         <View >
             <View>
                 <Image style={{height:120,width:"100%",marginBottom:-58}}
+                source={require('../../assets/one.jpg')}></Image>
+                 <Image style={{height:100,width:"30%",marginBottom:-85,right:-285,bottom:50}}
                 source={require('../../assets/women.jpg')}></Image>
         <Picker
         selectedValue={selectedValue}
-        style={{ height: 60, width: "100%" ,top:-60,color:"red",fontSize:20}}
+        style={{ height: 60, width: "70%" ,top:-60,color:"red",fontSize:20}}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="WOMEN" value="java" />
@@ -39,10 +41,12 @@ const Category = ({navigation}) => {
       </View>
       <View>
           <Image style={{width:"100%",height:100,marginBottom:-48}}
-          source={require('../../assets/men.jpg')}></Image>
+          source={require('../../assets/two.jpg')}></Image>
+           <Image style={{height:100,width:"35%",marginBottom:-78,left:270,bottom:50}}
+                source={require('../../assets/men.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%" ,top:-60,color:"red",fontSize:20}}
+        style={{ height: 50, width: "70%" ,top:-60,color:"red",fontSize:20}}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="MEN" value="java" />
@@ -65,10 +69,13 @@ const Category = ({navigation}) => {
       <View>
           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
+          source={require('../../assets/three.jpg')}></Image>
+          <Image
+          style={{width:"35%",height:100,marginBottom:-78,left:270,bottom:50}}
           source={require('../../assets/kids.jpg')}></Image>
       <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "70%",top:-60,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="KIDS" value="java" />
@@ -88,10 +95,12 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image style={{height:100,width:"100%",marginBottom:-48}}
+          source={require('../../assets/four.jpg')}></Image>
+            <Image style={{height:70,width:"40%",marginBottom:-78,left:270,bottom:50}}
           source={require('../../assets/cosmetics.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "70%",top:-35,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="BEAUTY&PERSONAL CARE" value="java" />
@@ -103,10 +112,12 @@ const Category = ({navigation}) => {
       </View>  
       <View>
           <Image style={{height:100,width:"100%",marginBottom:-48}}
+          source={require('../../assets/five.jpg')}></Image>
+           <Image style={{height:95,width:"35%",marginBottom:-78,left:265,bottom:47}}
           source={require('../../assets/living.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "68%",top:-45,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="HOME&LIVING" value="java" />
@@ -124,10 +135,13 @@ const Category = ({navigation}) => {
       <View>
           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
+          source={require('../../assets/six.jpg')}></Image>
+           <Image
+          style={{width:"35%",height:75,marginBottom:-78,left:265,bottom:40}}
           source={require('../../assets/gadgets.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "68%",top:-35,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="GADGETS" value="java" />
@@ -139,10 +153,13 @@ const Category = ({navigation}) => {
       <View>
           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
+          source={require('../../assets/seven.jpg')}></Image>
+           <Image
+          style={{width:"35%",height:85,marginBottom:-85,left:265,bottom:50}}
           source={require('../../assets/couple1.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "68%",top:-32,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="PLUS SIZE" value="size" />
@@ -153,10 +170,13 @@ const Category = ({navigation}) => {
       <View>
           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
+          source={require('../../assets/eight.jpg')}></Image>
+           <Image
+          style={{width:"35%",height:90,marginBottom:-78,left:265,bottom:45}}
           source={require('../../assets/couple2.jpg')}></Image>
        <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "68%",top:-35,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="THEME STORES" value="size" />
@@ -188,12 +208,16 @@ const Category = ({navigation}) => {
           
           <Image
           style={{width:"100%",height:100,marginBottom:-49}}
+          source={require('../../assets/nine.jpg')}>
+          </Image>
+          <Image
+          style={{width:"35%",height:90,marginBottom:-78,left:270,bottom:50}}
           source={require('../../assets/mall.jpg')}>
           </Image>
      <View>
      <Picker
         selectedValue={selectedValue}
-        style={{ height: 50, width: "100%",top:-60,color:"red",fontSize:20 }}
+        style={{ height: 50, width: "68%",top:-35,color:"red",fontSize:20 }}
         onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
       >
         <Picker.Item label="MYNTRA MALL" value="size" />

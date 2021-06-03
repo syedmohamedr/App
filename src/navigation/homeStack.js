@@ -13,9 +13,9 @@ const HomeStack =({navigation}) => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{headerTitleAlign:"center", headerLeft: () => (
-            <Icon.Button name="ios-menu" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
-        )
-        }} />
+            <Icon.Button name="ios-menu" size={30} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+         )   }}  />
+
     </Stack.Navigator>
     
   );
