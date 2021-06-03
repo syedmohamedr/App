@@ -6,6 +6,7 @@ import { Colors } from 'react-native/Libraries/NewAppScreen';
 import colors from '../../config/color';
 import Styles from './style';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/FontAwesome';
 const Images = [
     require(('../../assets/slider/H&m.jpg')),
     require(('../../assets/slider/traditonal.jpg')),
@@ -24,7 +25,7 @@ const Images = [
     require(('../../assets/slider/trendy.jpg')),
     require(('../../assets/slider/summer.jpg')),
    ];
-const MyntraScreen=()=> {
+const MyntraScreen=({navigation})=> {
     return (
         <ScrollView>
         <View style={styles.container}>
@@ -34,16 +35,16 @@ const MyntraScreen=()=> {
                 <Text style={{color:"#d35400",left:"47%",fontSize:45,top:-94,marginBottom:-40}}>all</Text>
                 <Text style={{left:"30%",top:-60,color:"black"}}>HOUSE OF BRANDS</Text>
                     </View>
-                <View style={{width:"100%",backgroundColor:"#fff",height:700}}>
+                <View style={{width:"100%",backgroundColor:"#fff",height:500}}>
                 <Text style={{left:"25%",top:40,color:"#2a2a2a",fontSize:20,fontWeight:"bold"}}>Brand Stores</Text>
                 <Text style={{left:"56%",top:13,color:"#d35400",fontSize:20,fontStyle:"italic",marginBottom:-30}}>In Focus</Text>
-                <View style={{top:70,border:1,borderColor:"gray",}}>
+                <View style={{top:50,border:1,borderColor:"gray"}}>
             <SliderBox
                     images={Images}
                     onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
-                    dotColor="black"
-                    height={600}
-                    inactiveDotColor="#F4F6F6"
+                    dotColor="white"
+                    height={420}
+                    inactiveDotColor="#F03232"
                     autoplay
                     circleLoop
             />
@@ -104,26 +105,26 @@ const MyntraScreen=()=> {
                                 <Text style={{left:299,top:-862}}>Min 40% Off</Text>
                 </View>
                 <View style={{width:"100%",borderTopWidth:50,borderColor:"#fff",}}>
-                <Text style={{top:-30,marginBottom:10,fontWeight:"bold",left:"30%",
+                <Text style={{top:-30,marginBottom:20,fontWeight:"bold",left:"30%",
                     color:"#d35400",fontSize:20,textDecorationLine:"underline"}}>New Brand Store</Text>
                 <SliderBox
                     images={New}
                     onCurrentImagePressed={index => console.warn(`image ${index} pressed`)}
-                    dotColor="black"
-                    inactiveDotColor="#90A4AE"
+                    dotColor="white"
+                    inactiveDotColor="#F03232"
                     height={400}
                     width={390}
                     autoplay
                     circleLoop
                     />
-                <Image style={{height:100,top:10}}
+                <Image style={{height:100,top:50}}
                     source={require('../../assets/slider/bg.jpg')}></Image>
-                    <Text style={{top:-80,color:"black",left:"17%",fontSize:20}}>"The joy of dressing is an art"</Text>
-                    <Text style={{top:-80,color:"black",left:150,fontSize:20,fontStyle:"italic"}}>--John Galliano</Text>
+                    <Text style={{top:-20,color:"black",left:"17%",fontSize:20}}>"The joy of dressing is an art"</Text>
+                    <Text style={{top:-20,color:"black",left:150,fontSize:20,fontStyle:"italic"}}>--John Galliano</Text>
                   
                 
                     </View>
-                    <View style={{bottom:20}}>
+                    <View style={{bottom:-10}}>
                   
                     </View>
         </View>

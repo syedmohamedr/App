@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 const InsiderStack = () => {
     return (           
           <View style={{backgroundColor:"black",height:"100%"}}>
-                    <ScrollView>
+                    <ScrollView style={{height:"100%"}}>
               <View style={{height:400}}>
                   <Image style={{height:29,width:29,left:"80%",top:10}}
               source={require('../../assets/myntra.png')}></Image>
@@ -39,6 +39,10 @@ const InsiderStack = () => {
             source={require('../../assets/icons/icon3.png')}></Image>
             <Text style={{left:200,color:"#fff",top:-95}}>Get Extra Savings &</Text>
             <Text style={{left:200,color:"#fff",top:-95}}>Offers on your purchasesa</Text>
+            <View style={{backgroundColor:"#E2F032", height:100,width:"100%"}}>
+                <Text>Its's easy to</Text>
+                <Text>become an Insider!</Text>
+            </View>
               </View>
                 </ScrollView>
           </View>
