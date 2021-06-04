@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const Coupons = () => {
+const Coupons = ({navigation}) => {
     const [modalVisible, setModalVisible] = useState(false);
     return (
       <View style={styles.centeredView}>
@@ -21,12 +21,13 @@ const Coupons = () => {
             <View style={styles.modalView}>
                 <Text>Login or Signup</Text>
               <TextInput
-                  placeholder="Phone number*"></TextInput>
+                  placeholder="Phone number*"
+                  maxLength={10}></TextInput>
                   <Text>By continuing, I agree to the </Text>
                   <Text style={{color:"red"}}>Terms of use & Privacy Policy</Text>
               <Pressable
                 style={[styles.button, styles.buttonClose]}
-                onPress={() => setModalVisible(!modalVisible)}
+                onPress={() => navigation.navigate('Profile')}
               >
                 <Text style={styles.textStyle}>CONTINUE</Text>
               </Pressable>
