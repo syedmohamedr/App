@@ -2,6 +2,7 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { View,Text } from 'react-native';
 import Category from '../screens/category';
+
 import Icon from 'react-native-vector-icons/FontAwesome'
 const Stack = createStackNavigator();
 
