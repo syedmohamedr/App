@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 
 
 
-const studioScreen =() => {
+const studioScreen =({navigation}) => {
   return (
     
     <Stack.Navigator>
