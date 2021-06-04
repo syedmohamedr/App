@@ -12,7 +12,7 @@ const [expanded, setExpanded] =React.useState(false);
         <View >
                 <Image style={{height:120,width:"100%",marginBottom:-58,}}
                 source={require('../../assets/one.jpg')}></Image>
-                 <Image style={{height:100,width:"30%",marginBottom:-70,right:-285,bottom:50}}
+                 <Image style={{height:100,width:"30%",marginBottom:-70,right:-250,bottom:50}}
                 source={require('../../assets/women.jpg')}></Image>
       <List.Section>
        <List.Accordion
@@ -127,7 +127,6 @@ title="Sports&Activewear"
         title="MEN"
         left={props => <List.Icon {...props} />}  
         onPress={handlePress}>
-        <List.Item title="Topwear"         onPress={() => Alert.alert('Topwear')}/>
         <List.Accordion
 title="Sports&Activewear" 
         left={props => <List.Icon {...props} />}
@@ -137,78 +136,162 @@ title="Sports&Activewear"
       <List.Item title="Sports Sandals"/>
       <List.Item title="Sports Accessories"/>
 </List.Accordion>
-        <List.Item title="Footwear"        onPress={() => Alert.alert('You are in the category of Men')} />
-        <List.Accordion
-title="Sports&Activewear" 
+          <List.Accordion
+title="Topwear" 
         left={props => <List.Icon {...props} />}
         onPress={handlePress}>
-      <List.Item title="Sports Apparel"/>
-      <List.Item title="Sports Shoes"/>
-      <List.Item title="Sports Sandals"/>
-      <List.Item title="Sports Accessories"/>
+      <List.Item title="T-Shirts" />
+      <List.Item title="Casual Shirts"/>
+      <List.Item title="Jackets"/>
+      <List.Item title="Sweaters"/>
+      <List.Item title="Coats"/>
+      <List.Item title="Formal Shirts"/>
+
 </List.Accordion>
-        <List.Item title="Bottomwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Accordion
-title="Sports&Activewear" 
+title="Bottomwear" 
         left={props => <List.Icon {...props} />}
         onPress={handlePress}>
-      <List.Item title="Sports Apparel"/>
-      <List.Item title="Sports Shoes"/>
-      <List.Item title="Sports Sandals"/>
-      <List.Item title="Sports Accessories"/>
+      <List.Item title="Jeans"/>
+      <List.Item title="Formal Trousers"/>
+      <List.Item title="Shorts"/>
+      <List.Item title="Trackpants&Joggers"/>
 </List.Accordion>
-        <List.Item title="Watches" onPress={() =>Alert.alert('You are in the category of Men')}/>
         <List.Accordion
-title="Sports&Activewear" 
+title="Watches" 
         left={props => <List.Icon {...props} />}
         onPress={handlePress}>
-      <List.Item title="Sports Apparel"/>
-      <List.Item title="Sports Shoes"/>
-      <List.Item title="Sports Sandals"/>
-      <List.Item title="Sports Accessories"/>
+      <List.Item title="Watches"/>
+      <List.Item title="Smart Watches& Fitness Bands"/>
+      
 </List.Accordion>
-        <List.Item title="Other Accessories" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Accordion
-title="Sports&Activewear" 
+title="Other Accessories" 
         left={props => <List.Icon {...props} />}
         onPress={handlePress}>
-      <List.Item title="Sports Apparel"/>
-      <List.Item title="Sports Shoes"/>
-      <List.Item title="Sports Sandals"/>
-      <List.Item title="Sports Accessories"/>
+      <List.Item title="Belts"/>
+      <List.Item title="Sunglasse&Frames"/>
+      <List.Item title="Jewellery"/>
+      <List.Item title="Cufflinks"/>
+      <List.Item title="Caps&Hats"/>
+      <List.Item title="Gloves"/>
+      <List.Item title="Phone Accessories"/>
+
 </List.Accordion>
-        <List.Item title="Innerwear" onPress={() => Alert.alert('You are in the category of Men')}/>
-        <List.Item title="Ethnicewear" onPress={() => Alert.alert('You are in the category of Men')}/>
-        <List.Item title="Sports&Activewear" onPress={() => Alert.alert('You are in the category of Men')}/>
-        <List.Item title="Ethnicwear" onPress={() => Alert.alert('You are in the category of Men')}/>
-        <List.Item title="Personal Care" onPress={() => Alert.alert('You are in the category of Men')}/>
+        <List.Accordion
+title="Innerwear" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Expolore All Innerwears"/>
+      <List.Item title="Boxers"/>
+      <List.Item title="Socks"/>
+      <List.Item title="Vests"/>
+      <List.Item title="Handkerchiefs"/>
+      <List.Item title="Briefs&Trunks"/>
+
+</List.Accordion>
+        <List.Accordion
+title="Ethnicewear" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Kurta& Kurta Sets"/>
+      <List.Item title="Nehru Jackets"/>
+      <List.Item title="Sherwanis"/>
+      <List.Item title="Ethnic Blazers"/>
+      </List.Accordion>
+        <List.Accordion
+title="Personal Care" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Grooming"/>
+      <List.Item title="Fragrances"/>
+      <List.Item title="Appliances"/>
+</List.Accordion>
         <List.Item title="Gift Card"onPress={() => Alert.alert('You are in the category of Men')} />
       </List.Accordion>
 </List.Section>
       <View>
-      <List.Section >
       <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/three.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/kids.jpg')}></Image>
-      <List.Accordion
+           <List.Section >
+           <List.Accordion
       style={{left:-50,width:"75%"}}
         title="KIDS"
         left={props => <List.Icon {...props} />}  
         onPress={handlePress}>
-        <List.Item title="Topwear" style={{color:"#ECEC22"}} onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Footwear" style={{color:"red"}} onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Footwear" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Lingerie" style={{color:"red"}} onPress={() => navigation.closeDrawer()}/>
-        <List.Item title="Bags, Wallets&Clutches"style={{color:"red"}} onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Jewellery" style={{color:"red"}}onPress={() => navigation.openDrawer()} />
-        <List.Item title="Other Accessories" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Sports&Activewear" style={{color:"red"}}onPress={() => navigation.openDrawer()} />
-        <List.Item title="Watches" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Myntra Stylecast" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
-        <List.Item title="Gift Card" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
+        <List.Item title="Explore Kids Store" style={{color:"#ECEC22"}} onPress={() => navigation.openDrawer()}/>
+        <List.Item title="Kids Footwear Store" style={{color:"red"}} onPress={() => navigation.openDrawer()}/>
+        <List.Item title="Festive Kids Store" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
+        <List.Accordion
+title="Girls Clothing" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Explore Girls Store"/>
+      <List.Item title="Skirts&Shorts"/>
+      <List.Item title="Ethnicwear"/>
+      <List.Item title="Nightwear"/>
+      <List.Item title="Innerwear"/>
+      <List.Item title="Clothing Sets"/>
+      </List.Accordion>
+        <List.Accordion
+title="Boys Clothing" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Explore Boys Store"/>
+      <List.Item title="T-Shirts"/>
+      <List.Item title="Shirts"/>
+      <List.Item title="Clothing Sets"/>
+      <List.Item title="Innerwear"/>
+      <List.Item title="Nightwear"/>
+      </List.Accordion>
+        <List.Accordion
+title="Boys Footwear" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Explore Boys Store"/>
+      <List.Item title="Casual Shoes"/>
+      <List.Item title="Sandals"/>
+      <List.Item title="Sport Shoes"/>
+      <List.Item title="Flip Flops"/>
+      <List.Item title="Sport Sandals"/>
+      </List.Accordion>
+        <List.Accordion
+title="Girls Footwear" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Explore Girls Store"/>
+      <List.Item title="Flats& Casual Shoes"/>
+      <List.Item title="Heels"/>
+      <List.Item title="Flip Flops"/>
+      <List.Item title="Sports Shoes"/>
+      <List.Item title="Sports Sandals"/>
+      </List.Accordion>
+        <List.Accordion
+title="Infants" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Explore Infants Store"/>
+      <List.Item title="Rompers& Onsesies"/> 
+      <List.Item title="Bottomwear"/>
+      <List.Item title="Nightwear"/>
+      <List.Item title="Innerwear"/>
+      <List.Item title="Clothing Sets"/>
+      </List.Accordion>
+        <List.Accordion
+title="Bags&Accessories" 
+        left={props => <List.Icon {...props} />}
+        onPress={handlePress}>
+      <List.Item title="Bags& Backpacks"/>
+      <List.Item title="Trolley Bags"/>
+      <List.Item title="Watches"/>
+      <List.Item title="Sunglasses&Frames"/>
+      <List.Item title="Sports Accessories& Equipments"/>
+      </List.Accordion>
+        <List.Item title="Masks" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
       </List.Accordion>
 </List.Section>
        
@@ -226,7 +309,7 @@ title="Sports&Activewear"
         title="BEAUTY&PERSONAL CARE "
         left={props => <List.Icon {...props} />} 
         onPress={handlePress}>
-        <List.Item title="Topwear" onPress={() => Alert.alert('You are in the category of Men')}/>
+        <List.Item title="Explore Beauty Store" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Lingerie"onPress={() => Alert.alert('You are in the category of Men')} />
