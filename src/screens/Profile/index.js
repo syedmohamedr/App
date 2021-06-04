@@ -18,7 +18,7 @@ const Separator = () => (
   <View style={Styles.separator} />
 );
 
-const Explore = ({navigation}) => {
+const Profile = ({navigation}) => {
   return (
     <ScrollView>
       <View>
@@ -153,5 +153,5 @@ const styles=StyleSheet.create({
 
 })
 
-export default Explore;
+export default Profile;
 

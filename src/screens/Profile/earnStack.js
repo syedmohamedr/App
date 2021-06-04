@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const EarnStack = () => {
+const EarnStack = ({navigation}) => {
     const [modalVisible, setModalVisible] = useState(true);
   return (
     <View style={styles.centeredView}>
@@ -29,7 +29,7 @@ const EarnStack = () => {
               style={{borderWidth:1,borderColor:"gray", width:"100%",height:40,borderRadius:10,marginBottom:10}}
              placeholder="  +91 |   Enter phone number*"
               numeric value  
-             keyboardType={'numeric'} 
+             maxLength={10}
                 />
                 <Text style={{right:"22%",color:"gray"}}>By continuing, I agree to the </Text>
                 <Text style={{color:"#fc0259",left:"18%",top:"-6%",fontWeight:"bold"}}>Terms of use  </Text>
@@ -41,7 +41,7 @@ const EarnStack = () => {
                 style={{width:"40%"}}
                title="CONTINUE"
                  color="#fc0259"
-                 onPress={() =>setModalVisible(!modalVisible)}
+                 onPress={() =>navigation.navigate('Profile')}
                 />
                 </View>
                 <Text style={{right:"22%",color:"gray"}}>Having trouble logging in?</Text>
