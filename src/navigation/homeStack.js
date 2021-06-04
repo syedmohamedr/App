@@ -4,7 +4,6 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import { View,Text } from 'react-native';
 import HomeScreen from '../screens/home';
 
-
 const Stack = createStackNavigator();
 
 
@@ -14,11 +13,11 @@ const HomeStack =({navigation}) => {
     <Stack.Navigator>
       <Stack.Screen name="Home" component={HomeScreen} options={{headerTitleAlign:"left", headerLeft: () => (
            <View style={{justifyContent:"space-between",flexDirection:"row"}}>
-             <AntDesign name="menu-unfold" size={25} color="#4a4f51" style={{left:4,}} onPress={() => navigation.openDrawer()} />
-             <AntDesign name="search1" size={25} color="#4a4f51" style={{left:230,}} onPress={() => navigation.openDrawer()} />
-             <AntDesign name="bells" size={25} color="#4a4f51" style={{left:240}} onPress={() => navigation.openDrawer()}/>
-             <AntDesign name="hearto" size={25} color="#4a4f51" style={{left:250,}} onPress={() => navigation.openDrawer()} />
-             <AntDesign name="shoppingcart" size={25} color="#4a4f51" style={{left:260,}} onPress={() => navigation.openDrawer()} />
+             <AntDesign name="menu-unfold" size={25} color="#4a4f51" style={{left:4,}} onPress={()=>navigation.openDrawer()} />
+             <AntDesign name="search1" size={25} color="#4a4f51" style={{left:230,}} onPress={()=>navigation.openDrawer()} />
+             <AntDesign name="bells" size={25} color="#4a4f51" style={{left:240}} onPress={()=>navigation.openDrawer()} />
+             <AntDesign name="hearto" size={25} color="#4a4f51" style={{left:250,}} onPress={()=>navigation.openDrawer()} />
+             <AntDesign name="shoppingcart" size={25} color="#4a4f51" style={{left:260,}} onPress={()=>navigation.openDrawer()}/>
            </View>
          )   }}  />
 
