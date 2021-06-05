@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import { View, Text,Modal,StyleSheet,Pressable, TextInput  } from 'react-native';
+import { View, Text,Modal,StyleSheet,Pressable, TextInput,Image  } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 const Stack = createStackNavigator();
 
-const Coupons = () => {
+const Coupons = ({navigation}) => {
     const [modalVisible, setModalVisible] = useState(false);
     return (
       <View style={styles.centeredView}>
@@ -19,14 +19,23 @@ const Coupons = () => {
         >
           <View style={styles.centeredView}>
             <View style={styles.modalView}>
-                <Text>Login or Signup</Text>
-              <TextInput
-                  placeholder="Phone number*"></TextInput>
+            <Image
+             style={{height:40,width:40,right:"42%",marginBottom:5,top:-5}}
+            source={require('../../assets/myntra.png')}/>
+              <Text style={{fontSize:20,fontWeight:"bold",right:"40%",marginBottom:10,color:"#022f45"}}>Login</Text>
+              <Text style={{fontSize:20,right:"28%",color:"gray",top:-37}}>or</Text>
+              <Text style={{fontSize:20,fontWeight:"bold",right:"15%",top:-63,color:"#022f45",marginBottom:-20}}>Signup</Text>
+                <TextInput
+              style={{borderWidth:1,borderColor:"gray", width:"100%",height:40,borderRadius:10,marginBottom:10}}
+             placeholder="  +91 |   Enter phone number*"
+              numeric value  
+             maxLength={10}
+                />
                   <Text>By continuing, I agree to the </Text>
                   <Text style={{color:"red"}}>Terms of use & Privacy Policy</Text>
               <Pressable
                 style={[styles.button, styles.buttonClose]}
-                onPress={() => setModalVisible(!modalVisible)}
+                onPress={() => navigation.navigate('Home')}
               >
                 <Text style={styles.textStyle}>CONTINUE</Text>
               </Pressable>

@@ -27,7 +27,7 @@ const Coupons = ({navigation}) => {
                   <Text style={{color:"red"}}>Terms of use & Privacy Policy</Text>
               <Pressable
                 style={[styles.button, styles.buttonClose]}
-                onPress={() => navigation.navigate('Profile')}
+                onPress={() => navigation.navigate('Home')}
               >
                 <Text style={styles.textStyle}>CONTINUE</Text>
               </Pressable>

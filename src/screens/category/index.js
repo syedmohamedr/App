@@ -10,17 +10,18 @@ const [expanded, setExpanded] =React.useState(false);
     return(
         <ScrollView>
         <View >
-                <Image style={{height:120,width:"100%",marginBottom:-58,}}
-                source={require('../../assets/one.jpg')}></Image>
-                 <Image style={{height:100,width:"30%",marginBottom:-70,right:-250,bottom:50}}
-                source={require('../../assets/women.jpg')}></Image>
+          <View style={{flex:1,width:"100%"}}>
+              
       <List.Section>
        <List.Accordion
-      style={{left:-50,width:"75%"}}
+      style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
         title="WOMEN"
         left={props => <List.Icon {...props} />}
-        onPress={handlePress}>
-      
+        onLongPress={handlePress}>
+        <Image style={{height:120,width:"100%",marginBottom:-58}}
+                source={require('../../assets/one.jpg')}></Image>
+                 <Image style={{height:110,width:"35%",marginBottom:-70,right:-270,bottom:55}}
+                source={require('../../assets/women.jpg')}></Image>
         <List.Accordion
         title="Western Wear"
         left={props => <List.Icon {...props} />}
@@ -115,18 +116,20 @@ title="Sports&Activewear"
         <List.Item title="Gift Card"   onPress={() => Alert.alert('You are in Women Category ')}/>
       </List.Accordion>
       </List.Section>
-          <Image
-          style={{width:"100%",height:100,marginBottom:-48}}
-          source={require('../../assets/two.jpg')}></Image>
-          <Image
-          style={{width:"35%",height:100,marginBottom:-78,left:270,bottom:50}}
-          source={require('../../assets/men.jpg')}></Image>
+      </View>
+          
       <List.Section >
       <List.Accordion
-      style={{left:-50,width:"75%"}}
+      style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
         title="MEN"
         left={props => <List.Icon {...props} />}  
         onPress={handlePress}>
+          <Image
+          style={{width:"100%",height:120,marginBottom:-48}}
+          source={require('../../assets/two.jpg')}></Image>
+          <Image
+          style={{width:"35%",height:110,marginBottom:-78,left:270,bottom:70}}
+          source={require('../../assets/men.jpg')}></Image>
         <List.Accordion
 title="Sports&Activewear" 
         left={props => <List.Icon {...props} />}
@@ -211,18 +214,19 @@ title="Personal Care"
       </List.Accordion>
 </List.Section>
       <View>
-      <Image
+     
+           <List.Section >
+           <List.Accordion
+      style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
+        title="KIDS"
+        left={props => <List.Icon {...props} />}  
+        onPress={handlePress}>
+           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/three.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/kids.jpg')}></Image>
-           <List.Section >
-           <List.Accordion
-      style={{left:-50,width:"75%"}}
-        title="KIDS"
-        left={props => <List.Icon {...props} />}  
-        onPress={handlePress}>
         <List.Item title="Explore Kids Store" style={{color:"#ECEC22"}} onPress={() => navigation.openDrawer()}/>
         <List.Item title="Kids Footwear Store" style={{color:"red"}} onPress={() => navigation.openDrawer()}/>
         <List.Item title="Festive Kids Store" style={{color:"red"}}onPress={() => navigation.openDrawer()}/>
@@ -297,18 +301,19 @@ title="Bags&Accessories"
        
       </View>  
       <View>
-      <Image
-          style={{width:"100%",height:100,marginBottom:-48}}
-          source={require('../../assets/four.jpg')}></Image>
-          <Image
-          style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
-          source={require('../../assets/cosmetics.jpg')}></Image>
+      
       <List.Section >
       <List.Accordion
-            style={{left:-50,width:"75%"}}
+            style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
         title="BEAUTY&PERSONAL CARE "
         left={props => <List.Icon {...props} />} 
         onPress={handlePress}>
+          <Image
+          style={{width:"100%",height:100,marginBottom:-48}}
+          source={require('../../assets/four.jpg')}></Image>
+          <Image
+          style={{width:"40%",height:100,marginBottom:-65,left:250,bottom:50}}
+          source={require('../../assets/cosmetics.jpg')}></Image>
         <List.Item title="Explore Beauty Store" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
@@ -324,18 +329,19 @@ title="Bags&Accessories"
 </List.Section>
       </View>  
       <View>
-      <Image
+    
+      <List.Section >
+      <List.Accordion
+                  style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
+        title="HOME&LIVING"
+        left={props => <List.Icon {...props} />} 
+        onPress={handlePress}>
+            <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/five.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/living.jpg')}></Image>
-      <List.Section >
-      <List.Accordion
-                  style={{left:-50,width:"75%"}}
-        title="HOME&LIVING"
-        left={props => <List.Icon {...props} />} 
-        onPress={handlePress}>
         <List.Item title="Topwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
@@ -351,18 +357,19 @@ title="Bags&Accessories"
 </List.Section>
       </View>  
       <View>
-      <Image
+     
+      <List.Section >
+      <List.Accordion
+                        style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
+        title="GADGETS"
+        left={props => <List.Icon {...props} />} 
+        onPress={handlePress}>
+           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/six.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/gadgets.jpg')}></Image>
-      <List.Section >
-      <List.Accordion
-                        style={{left:-50,width:"75%"}}
-        title="GADGETS"
-        left={props => <List.Icon {...props} />} 
-        onPress={handlePress}>
         <List.Item title="Topwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Men')}/>
@@ -378,18 +385,19 @@ title="Bags&Accessories"
 </List.Section>
       </View>  
       <View>
-      <Image
+     
+      <List.Section >
+      <List.Accordion
+                              style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
+        title="PLUS SIZE"
+        left={props => <List.Icon {...props} />} 
+        onPress={handlePress}>
+           <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/seven.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/couple1.jpg')}></Image>
-      <List.Section >
-      <List.Accordion
-                              style={{left:-50,width:"75%"}}
-        title="PLUS SIZE"
-        left={props => <List.Icon {...props} />} 
-        onPress={handlePress}>
         <List.Item title="Topwear" onPress={() => Alert.alert('You are in the category of Plus Size')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Plus Size')}/>
         <List.Item title="Footwear" onPress={() => Alert.alert('You are in the category of Plus Size')}/>
@@ -406,18 +414,19 @@ title="Bags&Accessories"
       
       </View>  
       <View>
-      <Image
+      
+      <List.Section >
+      <List.Accordion
+                              style={{left:-50,width:"110%",backgroundColor: "#F2C0BF",}}
+        title="THEME STORE"
+        left={props => <List.Icon {...props}  />} 
+        onPress={handlePress}>
+          <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/eight.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/couple2.jpg')}></Image>
-      <List.Section >
-      <List.Accordion
-                              style={{left:-50,width:"75%"}}
-        title="THEME STORE"
-        left={props => <List.Icon {...props}  />} 
-        onPress={handlePress}>
         <List.Item title="Topwear" onPress={() => Alert.alert('You are in the category of Theme Store')}/>
         <List.Item title="Footwear"onPress={() => Alert.alert('You are in the category of Theme Store')} />
         <List.Item title="Footwear"onPress={() => Alert.alert('You are in the category of Theme Store')} />
@@ -432,19 +441,20 @@ title="Bags&Accessories"
       </List.Accordion>
 </List.Section>
      <View >
-     <Image
+     
+     <List.Section >
+      <List.Accordion
+                                 transparent={true}
+                         style={{left:-50,width:"110%",backgroundColor:"#F2C0BF"}}
+        title="MYNTRA MALL"
+        left={props => <List.Icon {...props}  />} 
+        onPress={handlePress}>
+          <Image
           style={{width:"100%",height:100,marginBottom:-48}}
           source={require('../../assets/nine.jpg')}></Image>
           <Image
           style={{width:"35%",height:100,marginBottom:-65,left:270,bottom:50}}
           source={require('../../assets/mall.jpg')}></Image>
-     <List.Section >
-      <List.Accordion
-                                 transparent={true}
-                         style={{left:-50,width:"75%"}}
-        title="MYNTRA MALL"
-        left={props => <List.Icon {...props}  />} 
-        onPress={handlePress}>
         <List.Item title="Myntra Mall"onPress={() => Alert.alert('You are in Myntra Mall')} />
       </List.Accordion>
 </List.Section>
