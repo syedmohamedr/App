@@ -13,9 +13,9 @@ const PolicyStack = (navigation) => {
         <View style={{padding:5,backgroundColor:"white",marginBottom:1}}>
             <Text style={{fontSize:23,margin:10,marginBottom:40,marginTop:30}}> Privacy policy</Text>
         <List.AccordionGroup>
-    <List.Accordion style={{backgroundColor:"white",marginBottom:1,fontSize:40}} title="Introduction:" id="1">
+    <List.Accordion style={{backgroundColor:"white",marginBottom:1,}} title="Introduction:" id="1">
     <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12,}}>
       We value the trust you place in us. That's why we insist upon the highest
             standards for secure transactions and customer information privacy. Please read the following statement to 
         learn about our information gathering and dissemination practices.{"\n"} {"\n"}
@@ -31,7 +31,7 @@ const PolicyStack = (navigation) => {
     
     <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Collection of Personal Information:" id="2">
     <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       When you use our Website, we collect and store your personal information which is
         provided by you from time to time. Our primary goal in doing so is to provide you a safe, efficient, smooth
         and customized experience. This allows us to provide services and features that most likely meet your needs, 
@@ -43,7 +43,7 @@ const PolicyStack = (navigation) => {
     
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Use of Demography/profile Data" id="3">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We identify and use your IP address to help diagnose problems with our server,
              and to administer our Website. Your IP address is also used to help identify you and 
              to gather broad demographic information
@@ -52,7 +52,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Sharing of personal information" id="4">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We may disclose personal information to third parties. This disclosure may be
             required for us to provide you access to our Services, to comply with our legal obligations, 
             to enforce our User Agreement, to facilitate our marketing and advertising activities, or to prevent,
@@ -64,7 +64,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Links to Other sites" id="5">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We may share personal information with our other corporate entities and affiliates. 
             These entities and affiliates may market to you as a result of such 
             sharing unless you explicitly opt-out List.Accordion can be wrapped  because implementation uses React.Context.
@@ -73,7 +73,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Security Precautions" id="6">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       Our Website has stringent security measures in place to protect the
              loss, misuse, and alteration of the information under our control.
               Whenever you change or access your account information, we offer the use of a secure server.
@@ -84,7 +84,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Choice/Opt-Out" id="7">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We provide all users with the opportunity to opt-out of receiving 
            non-essential (promotional, marketing-related) communications from us on behalf of
             our partners, and from us in general, after setting up an account.
@@ -93,7 +93,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Advertisments on www.myntra.com" id="8">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We identify and use your IP address to help diagnose problems with our server,
              and to administer our Website. Your IP address is also used to help identify you and 
              to gather broad demographic information
@@ -102,7 +102,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Your Consent" id="9">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       We provide all users with the opportunity to opt-out of receiving 
            non-essential (promotional, marketing-related) communications from us on behalf of
             our partners, and from us in general, after setting up an account.
@@ -111,7 +111,7 @@ const PolicyStack = (navigation) => {
       </List.Accordion>
       <List.Accordion style={{backgroundColor:"white",marginBottom:1}} title="Grievance Officer" id="10">
       <View>
-      <Text style={{padding:10,color:"grey"}}>
+      <Text style={{padding:10,color:"grey",fontSize:12}}>
       In our efforts to continually improve our product and service
              offerings, we collect and analyse demographic and profile data about our users'
               activity on our Website
