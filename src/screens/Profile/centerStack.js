@@ -32,18 +32,18 @@ const CenterStack = (navigation) => {
                 </TouchableOpacity>
             </View>
             <View  style={{backgroundColor:"#fff",marginTop:5,padding:2}}>
-            <Text style={{fontWeight:"bold",left:15,marginBottom:10}}>MORE QUERIES RELATED TO YOUR EXPERIENCE</Text>
+            <Text style={{fontWeight:"bold",left:15,marginBottom:10,marginTop:15}}>MORE QUERIES RELATED TO YOUR EXPERIENCE</Text>
           
             <List.Section >
       <List.Accordion       
         title="Payment/Refund"
-        style={{height:40,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2,marginTop:2,width:"100%"}}
+        style={{height:50,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2,marginTop:2,width:"100%"}}
         
-        right={props => <List.Icon {...props}  />} 
+        right={props => <AntDesign name="right" size={12} color="#615557" style={{left:"99%",top:"10%",}} />} 
         onPress={handlePress}>
 
         <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+         right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
              <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -59,8 +59,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.1}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -77,7 +77,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My bank account details for refund" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -94,7 +94,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="I am unable to pay using wallet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -111,8 +111,8 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           
-          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -129,7 +129,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="I self shipped my return but haven't recived my refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -146,7 +146,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My order didn't get placed,but payment got debited" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -167,13 +167,14 @@ const CenterStack = (navigation) => {
       <List.Section >
       <List.Accordion       
         title="Offers,Discounts,Coupons"
-        style={{height:25,justifyContent:"center",alignContent:"center",alignItems:"center" ,padding:5,backgroundColor:"#fff",marginBottom:2}}
-        right={props => <List.Icon {...props} />}
+        style={{height:50,justifyContent:"center",alignContent:"center",alignItems:"center" ,padding:5,backgroundColor:"#fff",marginBottom:2,marginTop:-10}}
+        right={props => <AntDesign name="right" size={12} color="#615557" style={{left:"99%",top:"10%",}} /> }
         onPress={handlePress}>
-           <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           
+        <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
+         right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
-               <View style={{padding:15,}}>
+             <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund time is dippend on the mod</Text>
                <Text style={{color:"grey",fontSize:13,fontWeight:"bold" }}>Bank Account:</Text>
@@ -187,8 +188,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -205,7 +206,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My bank account details for refund" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -221,9 +222,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-
           <List.Accordion title="I am unable to pay using wallet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -239,9 +239,9 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-
+          
           <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -258,7 +258,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="I self shipped my return but haven't recived my refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -275,7 +275,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My order didn't get placed,but payment got debited" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -296,13 +296,14 @@ const CenterStack = (navigation) => {
       <List.Section >
       <List.Accordion       
         title="Manage Your Account"
-        style={{height:30,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2}}
-        right={props => <List.Icon {...props}  />} 
+        style={{height:50,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2,marginTop:-10}}
+        right={props => <AntDesign name="right" size={12} color="#615557" style={{left:"99%",top:"10%",}} /> }
         onPress={handlePress}>
-           <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           
+        <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
+         right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
-               <View style={{padding:15,}}>
+             <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund time is dippend on the mod</Text>
                <Text style={{color:"grey",fontSize:13,fontWeight:"bold" }}>Bank Account:</Text>
@@ -316,8 +317,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.5}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -334,7 +335,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My bank account details for refund" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -350,9 +351,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-
           <List.Accordion title="I am unable to pay using wallet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -368,8 +368,9 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          
+          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -386,7 +387,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="I self shipped my return but haven't recived my refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -403,7 +404,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My order didn't get placed,but payment got debited" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -419,18 +420,19 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-      </List.Accordion>
+                 </List.Accordion>
       </List.Section>
       <List.Section >
       <List.Accordion       
         title="Others"
-        style={{height:30,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2}}
-        right={props => <List.Icon {...props}  />} 
+        style={{height:50,justifyContent:"center",padding:5,backgroundColor:"#fff",marginBottom:2,marginTop:-10}}
+        right={props => <AntDesign name="right" size={12} color="#615557" style={{left:"99%",top:"10%",}} /> }
         onPress={handlePress}>
-           <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           
+        <List.Accordion title="My return was picked up but i have't recived my  refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
+         right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
-               <View style={{padding:15,}}>
+             <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund time is dippend on the mod</Text>
                <Text style={{color:"grey",fontSize:13,fontWeight:"bold" }}>Bank Account:</Text>
@@ -444,8 +446,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="My payment has been debited multiple times" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.5}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -462,7 +464,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My bank account details for refund" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -478,8 +480,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="I am unable to pay using wallet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="I am unable to pay using wallet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -495,8 +497,9 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          
+          <List.Accordion title="I am unable to use gift card" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -512,8 +515,8 @@ const CenterStack = (navigation) => {
                 <Text style={{fontWeight:"bold",fontSize:20,marginBottom:10,color:"#fc0259"}}>CONTACT US</Text>              
              </View>
           </List.Accordion>
-          <List.Accordion title="I self shipped my return but haven't recived my refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+          <List.Accordion title="I self shipped my return but haven't recived my refund yet" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey",borderTopWidth:0.3}} onPress={handlePress} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
@@ -530,7 +533,7 @@ const CenterStack = (navigation) => {
              </View>
           </List.Accordion>
           <List.Accordion title="My order didn't get placed,but payment got debited" titleNumberOfLines={2} style={{borderBottomWidth:0.5,borderBottomColor:"grey"}} onPress={handlePress} 
-           right={props => <List.Icon {...props}  />} 
+           right={props => <AntDesign name="right" size={8} color="#946277" style={{right:"80%",top:"10%",}} />} 
            onPress={handlePress}>
                <View style={{padding:15,}}>
                <Text style={{color:"grey",fontSize:13,marginBottom:30 }}>Refund will be initiated after we recive the iteams and it passes the quality</Text>
