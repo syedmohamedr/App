@@ -39,7 +39,7 @@ const App = () => {
             )
             }} />
                     <Drawer.Screen name="Categories" component={CategoryStack} options={{ title:"Shop By Categories",headerLeft: () => (
-                <Icon.Button name="lens" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+                <Icon.Button name="lens" size={20} width={60} height={60} style={{marginRight:20}} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
             )}}/>
         <Drawer.Screen name="Orders" component={ModalStack} options={{ title:"Orders",headerLeft: () => (
                 <Icon.Button name="menu-unfold" size={40} width={60} height={60} color="black" backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
