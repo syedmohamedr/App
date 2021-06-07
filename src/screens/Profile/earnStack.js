@@ -41,7 +41,7 @@ const EarnStack = ({navigation}) => {
                 style={{width:"40%"}}
                title="CONTINUE"
                  color="#fc0259"
-                 onPress={() =>navigation.navigate('Home')}
+                 onPress={() =>navigation.navigate('Profile')}
                 />
                 </View>
                 <Text style={{right:"22%",color:"gray"}}>Having trouble logging in?</Text>

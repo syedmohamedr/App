@@ -13,6 +13,7 @@ import {
 import Styles from './style';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import colors from '../../config/color';
+import Modal from '../Profile/earnStack';
 
 const Separator = () => (
   <View style={Styles.separator} />
@@ -31,7 +32,7 @@ const Profile = ({navigation}) => {
         <Button
         title="LOGIN/SIGN UP"
         color="#fc0259"
-        onPress={() => Alert.alert('You are trying to log in...')}
+        onPress={() =>navigation.navigate('Earn')}
       />
       </View>
       <Image
