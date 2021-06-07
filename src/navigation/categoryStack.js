@@ -13,8 +13,8 @@ const CategoryStack =({navigation}) => {
     <Stack.Navigator>
       <Stack.Screen name="Category" component={Category} options={{ headerRight: () => (
          <View style={{justifyContent:"center", flexDirection:"row"}}>
-          <Icon.Button name="heart-o" size={23}  style={{top:1}}   color="#414141"  backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
-          <Icon.Button name="shopping-bag" size={25} style={{left:-2}} color="#414141"  backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
+          <Icon.Button name="heart-o" size={23}  style={{top:1}}   color="#414141"  backgroundColor="#fff" onPress={() => navigation.navigate('Home')}></Icon.Button>
+          <Icon.Button name="shopping-bag" size={25} style={{left:-2,top:-3}} color="#414141"  backgroundColor="#fff" onPress={() => navigation.openDrawer()}></Icon.Button>
          </View>  )       }}  />
     </Stack.Navigator>
   );
